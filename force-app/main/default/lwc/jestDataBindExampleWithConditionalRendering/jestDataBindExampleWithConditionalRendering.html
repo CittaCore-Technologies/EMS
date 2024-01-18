@@ -1,0 +1,12 @@
+<template>
+	<p>{paragraphText}</p>
+	<lightning-button onclick={changePText}>Get New Paragraph Text</lightning-button>
+	<template lwc:if={renderImage}>
+		<img src="https://coolimage.png"/>
+	</template>
+	<template for:each={tacoList} for:item="taco">
+		<p class="tacoInfo" key={taco.Id}>
+			{taco.TacoType}
+		</p>
+	</template>
+</template>

@@ -34,7 +34,7 @@ public static String uploadFile1(String base64, String filename, String email) {
             WHERE CEMS_Work_Email__c = :email
             LIMIT 1
         ];
-        
+        system.debug('appointeeList++++++'  +appointeeList);
         if (!appointeeList.isEmpty()) {
             CEMS_Personnel__c appointee = appointeeList[0];
             System.debug('appointee:'+appointee);
@@ -88,6 +88,7 @@ public static String uploadFile2(String base64, String filename, String userEmai
         return null;
     }
 }
+    @TestVisible
 private static ContentVersion createContentVersion(String base64, String filename) {
     ContentVersion cv1 = new ContentVersion();
     cv1.VersionData = EncodingUtil.base64Decode(base64);
@@ -102,7 +103,7 @@ private static ContentVersion createContentVersion(String base64, String filenam
         return null;
     }
 }
-
+@TestVisible
 private static ContentDocumentLink createContentLink(String contentVersionId, Id appointeeId) {
     if (contentVersionId == null || appointeeId == null) {
         return null;

@@ -1,8 +1,57 @@
 public without sharing class RegistrationForm {
-  @AuraEnabled
+  /*@AuraEnabled
     public static void Register(String firstName, String lastName, String email, String city, String street, String country, String postalCode, String phone, String highestDegree, String qualification, Integer cgpa, String panCard, String experience, String previousCompany, String role, List<AttachmentWrapper> attachments) {
         CEMS_Personnel__c personnel = new CEMS_Personnel__c();
         personnel.RecordTypeId = '012DO0000008XfIYAU';
+
+        personnel.Name = firstName;
+        personnel.CEMS_Email__c = email;
+        personnel.CEMS_Contact_Number__c = phone;
+        personnel.CEMSAddress__Street__s = street;
+        personnel.CEMSAddress__PostalCode__s = postalCode;
+        personnel.CEMSAddress__City__s = city;
+        personnel.CEMS_Highest_Degree__c = highestDegree;
+        personnel.CEMS_Board_Of_Qualification__c = qualification;
+        personnel.CEMS_CGPA_Percentage__c = cgpa;
+        personnel.CEMS_PAN_Card_Number__c = panCard;
+        personnel.CEMS_Experience__c = experience;
+        personnel.CEMS_Company_Name__c = previousCompany;
+        personnel.CEMS_Roles__c = role;
+
+        // Insert the personnel record
+        try {
+            insert personnel;
+
+            if (attachments != null && !attachments.isEmpty()) {
+                List<ContentVersion> contentVersions = new List<ContentVersion>();
+
+                for (AttachmentWrapper attachment : attachments) {
+                    ContentVersion cv = new ContentVersion();
+                    cv.Title = attachment.fileName;
+                    cv.PathOnClient = attachment.fileName;
+                    cv.VersionData = attachment.fileContents;
+                    cv.FirstPublishLocationId = personnel.Id; // Set the parent record Id
+                    contentVersions.add(cv);
+                }
+
+                insert contentVersions;
+            }
+        } catch (Exception e) {
+            throw new AuraHandledException(e.getMessage());
+        }
+    }
+
+    public class AttachmentWrapper {
+        @AuraEnabled
+        public String fileName { get; set; }
+        @AuraEnabled
+        public Blob fileContents { get; set; }
+    }*/
+    
+     @AuraEnabled
+    public static void Register(String firstName, String lastName, String email, String city, String street, String country, String postalCode, String phone, String highestDegree, String qualification, Integer cgpa, String panCard, String experience, String previousCompany, String role, List<AttachmentWrapper> attachments, String recordTypeId) {
+        CEMS_Personnel__c personnel = new CEMS_Personnel__c();
+        personnel.RecordTypeId = recordTypeId; // Set the dynamic RecordTypeId
 
         personnel.Name = firstName;
         personnel.CEMS_Email__c = email;

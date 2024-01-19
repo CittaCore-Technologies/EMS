@@ -60,7 +60,8 @@ public Without Sharing class EmailTriggerHelper {
                 //sendToEmail.add(surv.Emp_Email__c);
             }
         }
-        sendToEmail.add('rama.k@cittacore.com');
+        //sendToEmail.add('rama.k@cittacore.com');
+        sendToEmail.add('nalinirajus@cittacore.com');
         List<CEMS_Leave__c> managerList = new List<CEMS_Leave__c>([select Id, CEMS_Employee__c, CEMS_Employee__r.CEMS_Work_Email__c 
                                                                            from CEMS_Leave__c 
                                                                            where id in :recIds]);

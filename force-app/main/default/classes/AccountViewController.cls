@@ -4,19 +4,14 @@ public without sharing class AccountViewController {
     
     static List<ContentVersion> cvList = new List<ContentVersion>();
     static List<ContentDocumentLink> cdList = new List<ContentDocumentLink>();
-    // Create a lightning-datatable and display modal on rowaction
+    
   @AuraEnabled(cacheable=true)
     public static List<Contact> getDataFromContact() {
         List<Contact> conList = new List<Contact>();
 
-        try {
+       
             conList = [SELECT Id, FirstName, LastName, Email, Phone FROM Contact LIMIT 10];
-        } catch (Exception e) {
-            // Handle the exception, log it, or throw a more specific exception if needed
-           // throw new AuraHandledException('An error occurred while fetching contacts:' + e.getMessage());
-                     //System.debug('An error occurred while fetching contacts' + e.getMessage());
-             throw new NoDataFoundException('An error occurred while fetching contacts.');
-       }
+       
 
         return conList;
     }
@@ -376,22 +371,33 @@ public static List<CEMS_Personnel__c> getEmployees(String email) {
 
     
     
+ @AuraEnabled(cacheable = true)
+    public static String insertEmployeeTraining(String email, String trainingRecordId) {
+        try {
+            // Retrieve the Training record and its record type ID
+            List<CEMS_Training__c> trainingRecords = [SELECT Id, Name, RecordTypeId, Registered__c FROM CEMS_Training__c WHERE Id = :trainingRecordId LIMIT 1];
 
-@AuraEnabled(cacheable = true)
-public static String insertEmployeeTraining(String email, String trainingRecordId) {
-    try {
-        // Retrieve the Training record and its record type ID
-        CEMS_Training__c trainingRecord = [SELECT Id, Name, RecordTypeId, Registered__c FROM CEMS_Training__c WHERE Id = :trainingRecordId LIMIT 1];
-        System.debug('trainingRecord' + trainingRecord);
+            if (trainingRecords.isEmpty()) {
+                return 'No employee training registered - Record not found for training Id: ' + trainingRecordId;
+            }
 
-        Id trainingRecordTypeId = trainingRecord.RecordTypeId;
-        System.debug('trainingRecordTypeId' + trainingRecordTypeId);
+            CEMS_Training__c trainingRecord = trainingRecords[0];
+            System.debug('trainingRecord: ' + trainingRecord);
 
-        if (trainingRecordTypeId != null && !trainingRecord.Registered__c) {
-            // Retrieve the Personnel record based on the provided email
-            CEMS_Personnel__c personnelRecord = [SELECT Id, Name FROM CEMS_Personnel__c WHERE CEMS_Work_Email__c = :email LIMIT 1];
-            System.debug('personnelRecord' + personnelRecord);
-            if (personnelRecord != null) {
+            Id trainingRecordTypeId = trainingRecord.RecordTypeId;
+            System.debug('trainingRecordTypeId: ' + trainingRecordTypeId);
+
+            if (trainingRecordTypeId != null && !trainingRecord.Registered__c) {
+                // Retrieve the Personnel record based on the provided email
+                List<CEMS_Personnel__c> personnelRecords = [SELECT Id, Name FROM CEMS_Personnel__c WHERE CEMS_Work_Email__c = :email LIMIT 1];
+
+                if (personnelRecords.isEmpty()) {
+                    return 'No employee found with email: ' + email;
+                }
+
+                CEMS_Personnel__c personnelRecord = personnelRecords[0];
+                System.debug('personnelRecord: ' + personnelRecord);
+
                 // Map to store Record Type Names and their corresponding Developer Names
                 Map<String, String> recordTypeMap = new Map<String, String>();
                 for (RecordType rt : [SELECT Id, Name, DeveloperName FROM RecordType WHERE SObjectType = 'Employee_Training__c']) {
@@ -400,7 +406,7 @@ public static String insertEmployeeTraining(String email, String trainingRecordI
 
                 // Create the Employee Training records based on the Training object's record types
                 List<Employee_Training__c> employeeTrainingList = new List<Employee_Training__c>();
-                System.debug('employeeTrainingList' + employeeTrainingList);
+                System.debug('employeeTrainingList: ' + employeeTrainingList);
 
                 String recordTypeDeveloperName = recordTypeMap.get(trainingRecord.Name);
                 if (recordTypeDeveloperName != null) {
@@ -410,7 +416,7 @@ public static String insertEmployeeTraining(String email, String trainingRecordI
                     // Set other field values based on the dynamic record type
 
                     employeeTrainingList.add(employeeTraining);
-                    System.debug('employeeTraining' + employeeTraining);
+                    System.debug('employeeTraining: ' + employeeTraining);
                 } else {
                     // Handle the case when the record type is not found
                     return 'No employee training registered - Record Type not found for training: ' + trainingRecord.Name;
@@ -424,15 +430,13 @@ public static String insertEmployeeTraining(String email, String trainingRecordI
 
                 return 'Employee training registered successfully';
             }
+
+            return 'No employee training registered';
+        } catch (Exception e) {
+            // Handle any exceptions that occurred during the process
+            String errorMessage = 'An error occurred while registering employee training: ' + e.getMessage();
+            System.debug('errorMessage: ' + errorMessage);
+            throw new AuraHandledException(errorMessage);
         }
-
-        return 'No employee training registered';
-    } catch (Exception e) {
-        // Handle any exceptions that occurred during the process
-        String errorMessage = 'An error occurred while registering employee training: ' + e.getMessage();
-        throw new AuraHandledException(errorMessage);
     }
-    
-}
-
 }

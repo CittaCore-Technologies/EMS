@@ -28,7 +28,7 @@ public class CEMS_PerformanceDataCreation
         
         delete recordsToDelete;
     }
-      /* @AuraEnabled(cacheable=true)
+       @AuraEnabled(cacheable=true)
 
 public static List<CEMS_Job_Opening__c> getJobOpen(String userEmail) {
     List<CEMS_Job_Opening__c> jobOpenings = new List<CEMS_Job_Opening__c>();
@@ -51,6 +51,6 @@ public static List<CEMS_Job_Opening__c> getJobOpen(String userEmail) {
     }
     
     return jobOpenings;
-}*/
+}
 
 }

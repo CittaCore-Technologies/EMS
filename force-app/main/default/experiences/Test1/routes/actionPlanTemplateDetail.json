@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "29efdea7-ad2f-47ad-96d1-20ca1c8c8143",
+  "appPageId" : "795b5213-4166-4c1f-be10-e35ab4ec6754",
+  "configurationTags" : [ ],
+  "devName" : "ActionPlanTemplate_Detail",
+  "id" : "01d44df1-7e7b-4be7-ae7b-be5e5aa952db",
+  "label" : "Action Plan Template Detail",
+  "routeType" : "detail-0PR",
+  "type" : "route",
+  "urlPrefix" : "actionplantemplate"
+}

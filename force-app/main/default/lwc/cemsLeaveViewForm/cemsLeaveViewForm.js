@@ -56,9 +56,9 @@ handleSubmit(event) {
 
     // Call the Lightning Data Service's createRecord method to insert the record
     createRecord(recordInput)
-        .then(() => {
+        .then((result) => {
             // Handle success
-            console.log("Record created successfully");
+            console.log("Record created successfully"+result);
             // Reset any necessary form fields or close the modal
         })
         .catch((error) => {
@@ -96,7 +96,7 @@ handleCancel() {
   }
 
 
-  // @wire(getLeaveRecords,{ email: '$email' })
+  // @wire(getEmployee1,{ email: '$email' })
   // wiredLeaveRecords({ error, data }) {
   //   console.log('data',data);
   //   if (data) {

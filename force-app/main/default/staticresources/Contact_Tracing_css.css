@@ -1,0 +1,386 @@
+.forceVirtualActionMarker.forceVirtualAction {
+    /** display:none !Important; **/
+}
+
+
+/*styles added on 1 may */
+
+
+/* .test-listViewSettingsMenu.slds-m-left_xx-small.forceListViewSettingsMenu {
+    display: none !Important;
+}
+
+span.countSortedByFilteredBy {
+    display: none !Important;
+}
+
+.forceListViewManagerDisplaySwitcher {
+    display: none !Important;
+}
+
+a.slds-button.slds-button--reset.downIcon.slds-m-top_xxx-small.slds-p-right_xxx-small {
+    display: none !Important;
+}
+
+.forceRefreshButton {
+    display: none !Important;
+}
+
+.forceHighlightsStencilDesktop .slds-page-header__detail-row {
+    padding: 1rem 1rem !Important;
+    margin: none !Important;
+    border-bottom: 1px solid lightgray !Important;
+}
+
+.forceCommunityRecordListDesktop .forceListViewManagerHeader force-list-view-manager-status-info {
+    display: none !Important;
+    color: rgba(0, 0, 0, 0.6);
+} */
+
+
+/* Use this to disable list view select drop down */
+
+.forceListViewPicker {
+    pointer-events: none;
+}
+
+
+/* Use this to hide dorpdown chevron next to list view name*/
+
+.forceListViewPicker.triggerLink .downIcon {
+    display: none !Important;
+}
+
+
+/*Styling for Home Page Cards*/
+
+.cardStyle {
+    /* Add shadows to create the "card" effect */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 180px;
+    /*pixel height is fine*/
+}
+
+
+/*Styling Card Number*/
+
+.cardNumber {
+    color: #232323;
+    display: block;
+    font-size: 28px;
+    font-weight: 1000;
+}
+
+
+/*Styling Card Title*/
+
+.cardTitle {
+    color: #232323;
+    display: block;
+    font-size: 17px;
+}
+
+
+/*Styling Card Description*/
+
+.cardDescStyle {
+    color: #606060;
+    display: block;
+    font-size: 14px;
+}
+
+
+/*Home Content Title Styling*/
+
+.contentTitle {
+    font-size: 32pt !important;
+}
+
+
+/*Home Content Subtitle Styling*/
+
+.contentSubtitle {
+    font-size: 17pt !important;
+}
+
+
+/*Style Navigation Links to be on a separate line*/
+
+.forceCommunityThemeHeaderCompact .themeNav {
+    position: absolute;
+    margin-top: 35px;
+}
+
+
+/*Push Profile logo to the Right*/
+
+.forceCommunityThemeHeaderCompact .themeUtils {
+    flex-grow: 1 !Important;
+}
+
+
+/*Style Profile Logo*/
+
+.forceCommunityThemeProfileMenu .profile-icon {
+    min-width: 20px;
+    width: 35px !Important;
+    height: 35px !Important;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+
+/*Fix Theme Logo Width*/
+
+.forceCommunityThemeLogo .logoImage {
+    height: 50px !Important;
+    max-height: 50px !Important;
+    width: 250px !Important;
+}
+
+.forceListViewManagerGrid .slds-cell-fixed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #edeaea !Important;
+}
+
+.forceCommunityRecordListDesktop.slds-card {
+    border: 1px solid rgb(212, 212, 212) !Important;
+}
+
+div.forceListViewManagerHeader.slds-page-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-left: 1% !Important;
+}
+
+div.forceListViewManagerHeader.slds-page-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-right: 1% !Important;
+    padding-left: 1% !Important;
+}
+
+.forceCommunityRecordHomeTabs .recordHomePrimaryContent {
+    float: left !Important;
+    width: 95% !Important;
+    border: 1px solid lightgray !Important;
+    overflow: hidden;
+}
+
+.forceHighlightsStencilDesktop.forceRecordLayout {
+    border: 1px solid lightgray !Important;
+    /* border-bottom: 1px solid lightgray; */
+}
+
+
+/**Desktop alignment**/
+
+@media only screen and (min-width: 800px) {
+    .forceCommunityThemeProfileMenu .profile-icon {
+        min-width: 20px;
+        width: 35px !Important;
+        height: 35px !Important;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+    .forceCommunityThemeHeaderCompact {
+        padding-left: 60px !Important;
+        padding-right: 60px !Important;
+    }
+    .forceCommunityThemeHeroBase .content {
+        color: rgba(9, 1, 1, 0.96);
+        z-index: 3;
+        padding-left: 30px !Important;
+        padding-right: 30px !Important;
+    }
+    .siteforceContentArea .comm-layout-column:not(:empty) {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        padding-left: 60px !Important;
+        padding-right: 60px !Important;
+    }
+    .cardStyle {
+        position: relative;
+        transform: translateY(-50%);
+        z-index: 2 !Important;
+        border-radius: 5px;
+        background-color: white !Important;
+        border: 1px solid rgb(212, 212, 212) !Important;
+    }
+    .bannerStyle {
+        min-height: 300px;
+    }
+    .topResources {
+        margin-top: -100px;
+    }
+    .imgBanner {
+        float: right;
+    }
+}
+
+
+/*Style for the Hero Section*/
+
+.siteforceSldsOneColLayout .comm-content-header {
+    background-color: #087bcc !Important;
+}
+
+.bannerStyle {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -1%;
+    background-color: #087bcc;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-top: 3%;
+}
+
+.headBanner {
+    font-size: 29pt;
+    /*margin-left: 49px*/
+}
+
+.subheadBanner {
+    font-size: 16pt;
+    /*margin-left: 49px;*/
+}
+
+.imgBanner {
+    /*Image has a fixed Width*/
+    width: 150px;
+    margin-left: 30%;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+    .bannerStyle {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -4%;
+        background-color: #087bcc;
+        color: white;
+        position: relative;
+        z-index: 1;
+        padding-top: 11%;
+    }
+    /*Removes a Gap in a Mobile View when a Menu Shows Up*/
+    .themeHeaderInner .themeNav.fadein {
+        margin-top: 0 !Important;
+    }
+    .headBanner {
+        font-size: 24pt;
+        font-weight: bold !Important;
+        margin-left: 15px;
+    }
+    .subheadBanner {
+        font-size: 14pt;
+        margin-left: 15px;
+        padding-bottom: 0;
+    }
+    .imgBanner {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+
+/*Styling Task Detail Top Element*/
+
+.forceCommunityRecordHeadline .forceHighlightsStencilDesktop.slds-page-header {
+    height: 150px !important;
+}
+
+
+/*Border Around Chatter Post in Record Detail*/
+
+
+/*
+.comm-page-detail .siteforceThemeLayoutStarter .isPageWidthFixed-true .siteforceContentArea .slds-grid .comm-layout-column .siteforceDesignTimeRegion .siteforceDesignTimeComponent .forceCommunityFeedPublisher{
+    border:1px solid lightgray;
+    border-radius: 5px;
+}*/
+
+
+/*Border Around Chatter Feed in Record Detail*/
+
+.forceCommunityForceCommunityFeed {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+
+/*Adding padding to Record Detail Page, to have blue background on Links*/
+
+.themeHeader .themeHeaderInner {
+    padding-bottom: 30px !Important;
+}
+
+.settings-footer-widget .settings-toggle-buttons {
+    display: none !Important;
+}
+
+.reportBuilder .edge-builder-ii .report-header .action-bars,
+.reportBuilder .edge-builder-ii .headerPanel .action-bars {
+    max-width: 100%;
+    display: none !Important;
+}
+
+.forceCommunityThemeSearchSection .search-trigger {
+    width: 20px;
+    display: none;
+}
+
+.slds-p-bottom_none,
+.slds-p-bottom--none {
+    /* Uncomment only if you want to make yourself look like a fool */
+    /* display: none!important; */
+}
+
+
+/* style added on 4th may */
+
+button.slds-button.slds-button_neutral.action-bar-action-addChart.reportAction.report-action-addChart {
+    display: none !Important;
+}
+
+.button.action-bar-action-toggleFilter.reportAction.report-action-toggleFilter.slds-button.slds-not-selected.slds-button_icon-border {
+    display: none !Important;
+}
+
+button.slds-button.slds-button--neutral.not-selected.slds-not-selected.uiButton {
+    display: none !Important;
+}
+
+button.slds-button.slds-button_stateful.slds-button_neutral.slds-not-selected.runtime_sales_activitiesTaskStatusButton {
+    display: none !Important;
+}
+
+.button.action-bar-action-toggleFilter.reportAction.report-action-toggleFilter.slds-button.slds-not-selected.slds-button_icon-border {
+    display: none;
+}
+
+
+/*Desktop View Query*/
+
+@media only screen and (min-width: 800px) {
+    .reportPageFrameWrapper {
+        display: none;
+    }
+}
+
+
+/*Mobile/Tab View Query*/
+
+@media only screen and (max-width: 800px) {
+    .test-listViewManager {
+        display: none;
+    }
+    .forceCommunityTaskList {
+        display: none;
+    }
+}

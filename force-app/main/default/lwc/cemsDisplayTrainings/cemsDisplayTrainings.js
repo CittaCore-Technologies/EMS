@@ -72,15 +72,20 @@ export default class CemsDisplayTrainings extends LightningElement {
   }
   
 
+
+
   loadEmployeeTrainings() {
     getAllCEMSTrainings()
       .then(result => {
         this.trainingList = result;
-        //console.log('----retrieved data:::' + JSON.stringify(this.trainingList));
+        console.log('----retrieved data:::' + JSON.stringify(this.trainingList));
 
-        const certificateRecordTypeId = '012DO0000008XdvYAE'; // Replace with the actual Certificate Record Type Id
-        const learningRecordTypeId = '012DO0000008Xe0YAE'; // Replace with the actual Learning Record Type Id
-        console.log(' this.trainingList');
+        const certificateRecordTypeId = '012H4000000VCPYIA4'; // Replace with the actual Certificate Record Type Id
+        const learningRecordTypeId = '012H4000000VCPZIA4'; // Replace with the actual Learning Record Type Id
+        console.log('certificateRecordTypeId'+certificateRecordTypeId);
+       console.log('learningRecordTypeId'+learningRecordTypeId);
+        console.log('----retrieved data:::' + JSON.stringify(this.trainingList));
+
         this.certificates = this.trainingList.filter(training => training.RecordTypeId === certificateRecordTypeId);
         console.log('Certificates fileds :::'+JSON.stringify( this.certificates));
         this.learnings = this.trainingList.filter(training => training.RecordTypeId === learningRecordTypeId);

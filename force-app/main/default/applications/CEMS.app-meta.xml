@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>CittCore_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>CEMS</label>
+    <navType>Standard</navType>
+    <tabs>CEMS_Personnel__c</tabs>
+    <tabs>CEMS_Employee_Award__c</tabs>
+    <tabs>CEMS_Employee_Project__c</tabs>
+    <tabs>Employee_Training__c</tabs>
+    <tabs>CEMS_Interview_Panel__c</tabs>
+    <tabs>CEMS_Job_Application__c</tabs>
+    <tabs>CEMS_Job_Opening__c</tabs>
+    <tabs>CEMS_Performance__c</tabs>
+    <tabs>CEMS_Referral__c</tabs>
+    <tabs>CEMS_Leave__c</tabs>
+    <tabs>CEMS_Training__c</tabs>
+    <tabs>Quarters__c</tabs>
+    <tabs>CEMS_Internal_Scheduler__c</tabs>
+    <tabs>CEMS_Performance_Improvement_Plan__c</tabs>
+    <tabs>CEMS_Pre_Screening__c</tabs>
+    <tabs>CEMS_Resignation__c</tabs>
+    <tabs>CEMS_User_Login__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>CEMS_UtilityBar</utilityBar>
+</CustomApplication>

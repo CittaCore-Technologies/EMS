@@ -95,13 +95,10 @@ private static ContentVersion createContentVersion(String base64, String filenam
     cv1.Title = filename;
     cv1.PathOnClient = filename;
     
-    try {
+   
         insert cv1;
         return cv1;
-    } catch (DMLException e) {
-        System.debug(e);
-        return null;
-    }
+    
 }
 @TestVisible
 private static ContentDocumentLink createContentLink(String contentVersionId, Id appointeeId) {
@@ -119,13 +116,10 @@ private static ContentDocumentLink createContentLink(String contentVersionId, Id
     cdl1.LinkedEntityId = appointeeId;
     cdl1.ShareType = 'I';
     
-    try {
+   
         insert cdl1;
         return cdl1;
-    } catch (DMLException e) {
-        System.debug(e);
-        return null;
-    }
+    
 }
 
 @AuraEnabled(cacheable=true)
@@ -201,6 +195,7 @@ public static List<ContentVersion> fetchFiles(String email) {
         } else {
             return new List<Map<String, Object>>(); // Return an empty list if no matching record is found
         }
+        
 
     }   
     @AuraEnabled(cacheable = true)

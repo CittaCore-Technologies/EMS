@@ -88,6 +88,7 @@ export default class LoginPopup extends LightningElement {
         this.isLoggedIn = true;
         this.showLoginPage = false;
         this.loggedInEmail = this.email;
+
       }).catch(error => {
         console.error(JSON.stringify(error));
       });
@@ -170,10 +171,11 @@ export default class LoginPopup extends LightningElement {
 
   handleLogout() {
     this.isLoggedIn = false;
-
     this.showLoginPage = true;
     this.email = null;
-    sessionStorage.clear();
+      sessionStorage.clear();
+      this.email = sessionStorage.clear('rememberedemail');
+
 
     // Additional logout logic if needed
   }

@@ -7,7 +7,7 @@ public class AccountViewControllerTest {
     }
        
     //Get Data from Contact
-   /* @isTest
+    @isTest
     static void testGetDataFromContact() {
         // Create test data
         
@@ -26,75 +26,17 @@ public class AccountViewControllerTest {
         // Set up the test environment
         Test.startTest();
         
-         try {
-            List<Contact> contacts = AccountViewController.getDataFromContact();
-            // Add assertions or validations as needed for the returned data
-            System.assertEquals(5, contacts.size());
-        } catch (Exception e) {
-            // Handle or assert the expected exception
-            System.assertEquals('An error occurred while fetching contacts.', e.getMessage());
-        }
-        
         // Call the method being tested
-        //List<Contact> resultingContacts = AccountViewController.getDataFromContact();
+        
+        List<Contact> resultingContacts = AccountViewController.getDataFromContact();
         
         // Verify the results
-       // System.assertEquals(5, resultingContacts.size());
-        // Add more assertions as needed
+       System.assertEquals(5, resultingContacts.size());
+       
         
         Test.stopTest();
-    }*/
+    }
    
-    @isTest
-    static void testGetDataFromContactWithException() {
-        // Negative Test Case to cover catch block
-
-        // Insert a contact to trigger a DML exception
-        Contact testContact = new Contact(
-            FirstName = 'Test', 
-            LastName = 'Contact', 
-            Email = 'test@example.com', 
-            Phone = '1234567890'
-        );
-        insert testContact;
-
-        // Ensure that the test Contact is not returned in the query
-        Test.startTest();
-        try {
-            // Simulate a DML exception by querying for a non-existent object
-            List<Contact> conList = [SELECT Id, FirstName, LastName, Email, Phone FROM Contact LIMIT 1];
-        } catch (AccountViewController.NoDataFoundException e) {
-            // Add assertions for the negative case
-            System.assertEquals('An error occurred while fetching contacts.', e.getMessage(), 'Exception message should match.');
-        } finally {
-            Test.stopTest();
-        }
-    }
-    
-    
-    @isTest
-    static void testGetDataFromContact_ExceptionScenario() {
-        // Set up the test environment
-        Test.startTest();
-        
-        // Simulate an exception scenario by limiting the query to cause an exception
-        try {
-            List<Contact> resultingContacts = AccountViewController.getDataFromContact();
-            
-            // You can add assertions here to validate the exception if needed
-            
-        } catch (NoDataFoundException e) {
-            // Verify that the exception message is as expected
-            System.assertEquals('An error occurred while fetching contacts.', e.getMessage(), 'Unexpected exception message');
-        } catch (Exception e) {
-            // Fail the test if an unexpected exception type is caught
-            System.assert(false, 'Unexpected exception type caught: ' + e.getTypeName());
-        }
-        
-        Test.stopTest();
-    }
-    
-    
     
     //Get JobOpenings
     @isTest
@@ -471,44 +413,7 @@ public class AccountViewControllerTest {
         Test.startTest();
         System.assertEquals('No Record Found..', 'No Record Found..', 'Unexpected exception message');
         Test.stopTest();
-        // Create a test user and CEMS_Personnel__c record for testing
-        /*   User testUser = TestDataFactory.createTestUser('testuser@example.com', 'Standard User');
-CEMS_Personnel__c testEmployee = TestDataFactory.createTestEmployee(testUser.Id);
-
-// Create Employee_Training__c records related to the test employee
-List<Employee_Training__c> testTrainings = TestDataFactory.createTestTrainings(testEmployee.Id);
-
-try {
-// Call the method to be tested with the existing email
-Test.startTest();
-List<Employee_Training__c> result = AccountViewController.getEmployeeTrainings1(testEmployee.CEMS_Work_Email__c);
-Test.stopTest();
-
-// Debug logs to see the actual number of records retrieved
-System.debug('Actual number of employee training records: ' + result.size());
-System.debug('Expected number of employee training records: ' + testTrainings.size());
-
-// Assert the results
-System.assertNotEquals(null, result, 'Expected a non-null result for an existing email');
-System.assertEquals(testTrainings.size(), result.size(), 'Unexpected number of employee training records');
-
-// Validate the fields of each record
-for (integer i = 0; i < testTrainings.size(); i++) {
-Employee_Training__c expectedTraining = testTrainings[i];
-Employee_Training__c actualTraining = result[i];
-
-System.assertEquals(expectedTraining.Id, actualTraining.Id, 'Mismatch in record Id');
-System.assertEquals(expectedTraining.CEMS_Employee_Name__r.Name, actualTraining.CEMS_Employee_Name__r.Name, 'Mismatch in employee name');
-System.assertEquals(expectedTraining.CEMS_Learning_Name__r.CEMS_Learning_Name__c, actualTraining.CEMS_Learning_Name__r.CEMS_Learning_Name__c, 'Mismatch in learning name');
-System.assertEquals(expectedTraining.CEMS_Certification_Name__r.CEMS_Certificate_Name__c, actualTraining.CEMS_Certification_Name__r.CEMS_Certificate_Name__c, 'Mismatch in certification name');
-System.assertEquals(expectedTraining.CEMS_Status__c, actualTraining.CEMS_Status__c, 'Mismatch in status');
-System.assertEquals(expectedTraining.CEMS_Due_Date__c, actualTraining.CEMS_Due_Date__c, 'Mismatch in due date');
-}
-} catch (Exception e) {
-System.debug('Exception caught during test: ' + e.getMessage());
-System.assert(false, 'Test failed due to an unexpected exception: ' + e.getMessage());
-}*/
-    }
+          }
     
     
     ///SearchJobOpenings
@@ -717,7 +622,7 @@ System.assert(false, 'Test failed due to an unexpected exception: ' + e.getMessa
         
         // Add more assertions based on your specific requirements
     }
-    ///////////////////  
+
     @isTest
     static void testGetEmployees() {
         // Create a test CEMS_User_Login__c record

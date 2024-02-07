@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Apex Development</fullName>
+        <default>false</default>
+        <label>Apex Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Configuration</fullName>
+        <default>false</default>
+        <label>Configuration</label>
+    </customValue>
+    <customValue>
+        <fullName>Debugging and Testing</fullName>
+        <default>false</default>
+        <label>Debugging and Testing</label>
+    </customValue>
+    <customValue>
+        <fullName>Security and Access</fullName>
+        <default>false</default>
+        <label>Security and Access</label>
+    </customValue>
+    <customValue>
+        <fullName>Visualforce Pages</fullName>
+        <default>false</default>
+        <label>Visualforce Pages</label>
+    </customValue>
+    <customValue>
+        <fullName>Process Automation</fullName>
+        <default>false</default>
+        <label>Process Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Integration</fullName>
+        <default>false</default>
+        <label>Data Integration</label>
+    </customValue>
+    <customValue>
+        <fullName>Patient Management</fullName>
+        <default>false</default>
+        <label>Patient Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Plan Management</fullName>
+        <default>false</default>
+        <label>Care Plan Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Case Management</fullName>
+        <default>false</default>
+        <label>Case Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Knowledge Management</fullName>
+        <default>false</default>
+        <label>Knowledge Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Opportunity Management</fullName>
+        <default>false</default>
+        <label>Opportunity Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Account Management</fullName>
+        <default>false</default>
+        <label>Account Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Lightning Components</fullName>
+        <default>false</default>
+        <label>Lightning Components</label>
+    </customValue>
+    <customValue>
+        <fullName>Product Configuration</fullName>
+        <default>false</default>
+        <label>Product Configuration</label>
+    </customValue>
+    <customValue>
+        <fullName>Pricing Rules</fullName>
+        <default>false</default>
+        <label>Pricing Rules</label>
+    </customValue>
+    <masterLabel>Skills</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

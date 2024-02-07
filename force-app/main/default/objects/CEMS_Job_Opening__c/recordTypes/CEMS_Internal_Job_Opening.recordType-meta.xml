@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_Internal_Job_Opening</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CEMS_Job_Opening</compactLayoutAssignment>
+    <label>Internal Job Opening</label>
+    <picklistValues>
+        <picklist>CEMS_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Experience__c</picklist>
+        <values>
+            <fullName>0-1 Yr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1-3 Yrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2B Yrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4-7 Yrs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7-10 Yrs</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Job_Location__c</picklist>
+        <values>
+            <fullName>Bangalore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chennai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyderabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pune</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Skills__c</picklist>
+        <values>
+            <fullName>Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apex Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Plan Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debugging and Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knowledge Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightning Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Rules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security and Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualforce Pages</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Status__c</picklist>
+        <values>
+            <fullName>Filled%2FClosed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Technology__c</picklist>
+        <values>
+            <fullName>Amazon Web Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBM Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oracle Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salesforce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grade__c</picklist>
+        <values>
+            <fullName>E1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

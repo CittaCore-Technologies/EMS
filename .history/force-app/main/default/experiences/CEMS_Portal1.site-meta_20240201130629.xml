@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site xmlns="http://soap.sforce.com/2006/04/metadata">
+    <experienceBundle>
+        <apiVersion>52.0</apiVersion>
+        <isGuestSite>false</isGuestSite>
+        <label>CEMS Portal1</label>
+        <lightningBolts>
+            <name>CEMS_Portal1</name>
+        </lightningBolts>
+        <networks>
+            <network>CEMS_Portal</network>
+        </networks>
+        <siteType>ChatterNetworkPicasso</siteType>
+        <theme>Theme1</theme>
+        <urlPathPrefix>cems_portal1</urlPathPrefix>
+    </experienceBundle>
+</Site>

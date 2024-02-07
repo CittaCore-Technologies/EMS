@@ -1,5 +1,4 @@
-public class CEMS_PerformanceDataCreation 
-{
+public class CEMS_PerformanceDataCreation {
     /*public static void createPerformanceRecords() {
         List<CEMS_Personnel__c> employee = new List<CEMS_Personnel__c> [select Name,ID from CEMS_Personnel__c where Name like '%a2iD%'];
        
@@ -28,14 +27,14 @@ public class CEMS_PerformanceDataCreation
         
         delete recordsToDelete;
     }
-       @AuraEnabled(cacheable=true)
+      @AuraEnabled(cacheable=true)
 
 public static List<CEMS_Job_Opening__c> getJobOpen(String userEmail) {
     List<CEMS_Job_Opening__c> jobOpenings = new List<CEMS_Job_Opening__c>();
 
     // Step 1: Query the personnel record based on the user's email
     CEMS_Personnel__c personnel = [SELECT Id, CEMS_Personal_Email__c, CEMS_Work_Email__c FROM CEMS_Personnel__c WHERE CEMS_Personal_Email__c = :userEmail OR CEMS_Work_Email__c = :userEmail LIMIT 1];
-
+ system.debug('personnel'+personnel);
     if (personnel != null) {
         // Step 2: Check if the personnel record has both personal and work email fields
         if (personnel.CEMS_Personal_Email__c != null && personnel.CEMS_Work_Email__c != null) {
@@ -51,6 +50,7 @@ public static List<CEMS_Job_Opening__c> getJobOpen(String userEmail) {
     }
     
     return jobOpenings;
+ 
 }
 
 }

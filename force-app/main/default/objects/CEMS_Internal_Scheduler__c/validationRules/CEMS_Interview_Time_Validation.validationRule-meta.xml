@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_Interview_Time_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>((CEMS_Interview_End_Time__c - CEMS_Interview_Start_Time__c) * 24*60) &gt; 120</errorConditionFormula>
+    <errorDisplayField>CEMS_Interview_End_Time__c</errorDisplayField>
+    <errorMessage>The interview should be scheduled within 2 hours of the start time and end on the same day. Please select an end time that meets these requirements</errorMessage>
+</ValidationRule>

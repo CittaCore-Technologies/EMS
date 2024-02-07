@@ -26,7 +26,7 @@ export default class AwardsList extends LightningElement {
     const end = pageNumber * this.pageSize;
     this.awards = this.employeeAwardsList.slice(start, end);
   }
-  /* @wire(getAllAwards)
+   /*@wire(getAllAwards)
    wiredAwards(result) {
        if (result.data) {
            this.awards = result.data;
@@ -85,4 +85,7 @@ export default class AwardsList extends LightningElement {
   //     this.isLoading = true;
   //     return refreshApex(this.wiredAwards);
   // }
+
+
+
 }

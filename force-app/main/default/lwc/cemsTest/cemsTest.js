@@ -1,5 +1,5 @@
 import { LightningElement, api, wire, track } from 'lwc';
-//import getJobOpenings from '@salesforce/apex/AccountViewController.getJobOpenings';
+import getJobOpenings from '@salesforce/apex/AccountViewController.getJobOpen';
 import searchJobOpenings from '@salesforce/apex/AccountViewController.searchJobOpenings';
 import { createMessageContext, releaseMessageContext, publish } from 'lightning/messageService';
 import getTechnologyOptions from '@salesforce/apex/AccountViewController.getTechnologyOptions';
@@ -8,7 +8,7 @@ import getExperienceOptions from '@salesforce/apex/AccountViewController.getExpe
 import getLocationOptions from '@salesforce/apex/AccountViewController.getLocationOptions';
 import applicantGenerateOtpHandler from '@salesforce/apex/CEMS_LoginHandler.applicantGenerateOtpHandler';
 import applicantValidateOtpHandler from '@salesforce/apex/CEMS_LoginHandler.applicantValidateOtpHandler';
-import getJobOpen from '@salesforce/apex/CEMS_PerformanceDataCreation.getJobOpen';
+//import getJobOpen from '@salesforce/apex/CEMS_PerformanceDataCreation.getJobOpen';
 import handleUpload from '@salesforce/apex/AccViewContlr.uploadFile2';
 
 //import JOBCHANNEL from "@salesforce/messageChannel/JobOpeningChannel__c";
@@ -211,9 +211,10 @@ filterJobOpenings() {
 
 
   loadJobOpenings() {
-    getJobOpen({ userEmail: this.usEmail })
+    getJobOpenings({ userEmail: this.usEmail })
       .then((result) => {
         this.jobOpeningList = result;
+        console.log('result:::'+JSON.stringify(result));
         this.totalRecords = result.length;
         this.currentPage = 1;
         this.filterJobOpenings();

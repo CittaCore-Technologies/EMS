@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FillAtleatOneInterviewer</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(CEMS_Interviewer_1__c) &amp;&amp; ISBLANK(CEMS_Interviewer_2__c) &amp;&amp; ISBLANK(CEMS_Interviewer_3__c)</errorConditionFormula>
+    <errorMessage>Please ensure that at least one interviewer is assigned to this panel.</errorMessage>
+</ValidationRule>

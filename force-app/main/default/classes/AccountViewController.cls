@@ -9,9 +9,9 @@ public without sharing class AccountViewController {
     public static List<Contact> getDataFromContact() {
         List<Contact> conList = new List<Contact>();
 
-       
+        
             conList = [SELECT Id, FirstName, LastName, Email, Phone FROM Contact LIMIT 10];
-       
+        
 
         return conList;
     }
@@ -69,15 +69,34 @@ public without sharing class AccountViewController {
     return locationOptions;
     }
 
+    // @AuraEnabled(cacheable = true)
+    // public static List<CEMS_Employee_Award__c> GetEmployeeAwards(string email){
+    // List<CEMS_Employee_Award__c> EmployeeAwards = [SELECT Id, Name,CEMS_Award__r.Name,CEMS_Award_Date__c,CEMS_Employee__c,CEMS_Award_URL__c,CEMS_Employee__r.Name FROM CEMS_Employee_Award__c WHERE CEMS_Employee__r.cems_work_email__c =:email];
+    // if(EmployeeAwards.isEmpty())  
+    // {
+    //     throw new AuraHandledException('No Record Found..');
+    // }                
+    // return EmployeeAwards;
+    // }   
+
     @AuraEnabled(cacheable = true)
-    public static List<CEMS_Employee_Award__c> GetEmployeeAwards(string email){
-    List<CEMS_Employee_Award__c> EmployeeAwards = [SELECT Id, Name,CEMS_Award__r.Name,CEMS_Award_Date__c,CEMS_Employee__c,CEMS_Award_URL__c,CEMS_Employee__r.Name FROM CEMS_Employee_Award__c WHERE CEMS_Employee__r.cems_work_email__c =:email];
-    if(EmployeeAwards.isEmpty())  
-    {
-        throw new AuraHandledException('No Record Found..');
-    }                
-    return EmployeeAwards;
-    }   
+    public static List<CEMS_Employee_Award__c> GetEmployeeAwards(String email) {
+        List<CEMS_Employee_Award__c> EmployeeAwards;
+        if (String.isNotBlank(email)) {
+            EmployeeAwards = [SELECT Id, Name, CEMS_Award__r.Name, CEMS_Award_Date__c, 
+                                    CEMS_Employee__c, CEMS_Award_URL__c, CEMS_Employee__r.Name 
+                              FROM CEMS_Employee_Award__c 
+                              WHERE CEMS_Employee__r.cems_work_email__c = :email];
+        } else {
+            EmployeeAwards = [SELECT Id, Name, CEMS_Award__r.Name, CEMS_Award_Date__c, 
+                                    CEMS_Employee__c, CEMS_Award_URL__c, CEMS_Employee__r.Name 
+                              FROM CEMS_Employee_Award__c];
+        }
+        if (EmployeeAwards.isEmpty()) {
+            throw new AuraHandledException('No Record Found..');
+        }
+        return EmployeeAwards;
+    }
     @AuraEnabled(cacheable = true)
     public static List<CEMS_Performance__c> getPerformances(String email){
     List<CEMS_Performance__c> EmployeePerformance = [SELECT Id, Name,CEMS_Employee__r.Name, CEMS_Current_Discussion_Date__c, CEMS_Feedback__c, CEMS_Last_Discussion_Date__c, CEMS_Opportunities__c, CEMS_Performance_ID__c, CEMS_Performance_Outcome__c, CEMS_Promoted_Designation__c, CEMS_Weakness__c, CEMS_Threats__c, CEMS_Strength__c, CEMS_Rating_Value_4__c, CEMS_Rating_Value_3__c, CEMS_Rating_Value_2__c, CEMS_Rating_Value_1__c, CEMS_Career_Development_Focus_Areas__c, CEMS_Bonus__c, CEMS_Hike__c, CEMS_Employee__c, CEMS_Overall_Rating__c FROM CEMS_Performance__c WHERE CEMS_Employee__r.cems_work_email__c =:email ];
@@ -89,6 +108,10 @@ public without sharing class AccountViewController {
     }  
     @AuraEnabled(cacheable = true)
     public static List<CEMS_Personnel__c> getEmployee(String email){
+        // Check if the email parameter is null
+    if (email == null) {
+        return null;
+    }
     List<CEMS_Personnel__c> Employee = [SELECT Id,Name,CEMS_Work_Email__c,CEMS_Work_Location__c,CEMS_Contact_Number__c, 
     CEMS_Employee_ID__c, CEMS_HR_Manager__r.Name,CEMS_Position__r.Name,CEMSAddress__City__s,CEMSAddress__CountryCode__s, 
     CEMSAddress__Street__s,CEMSAddress__StateCode__s, CEMS_Personal_Email__c,CEMS_Date_of_Birth__c
@@ -125,6 +148,10 @@ public without sharing class AccountViewController {
 
 @AuraEnabled(cacheable = true)
 public static List<CEMS_Employee_Project__c> GetEmployeeProjects(string email){
+    // Check if the email parameter is null
+    if (email == null) {
+        return null;
+    }
     List<CEMS_Employee_Project__c> EmployeeProjects = [SELECT Id, Name,CEMS_Projects__r.Name,CEMS_Employee__r.cems_work_email__c,CEMS_Employee_s_Project_Start_Date__c,CEMS_Employee_s_Project_End_Date__c,CEMS_Employee__r.Name FROM CEMS_Employee_Project__c where CEMS_Employee__r.cems_work_email__c=:email];
     if(EmployeeProjects.isEmpty())  
     {
@@ -227,7 +254,7 @@ public static void createContentLink(String contentversionId,String emailId)
         }
         else
         {
-            System.debug('not valid user');
+         //   System.debug('not valid user');
         }
         cdl.ShareType = 'V';
         cdList.add(cdl);
@@ -237,24 +264,6 @@ public static void createContentLink(String contentversionId,String emailId)
     }
 } 
 
-// @AuraEnabled
-// public static void sendEmailToHR(String filename, String email) {
-// // Implement the email notification logic to send an email to the HR
-// List<Messaging.SingleEmailMessage> emailList = new List<Messaging.SingleEmailMessage>();
-// List<String> address = new List<String>{'nalinirajus@cittacore.com'};
-// List<OrgWideEmailAddress> orgEmail = [Select Id from OrgWideEmailAddress where Address = 'mohammed_462@outlook.com'];
-
-// Messaging.SingleEmailMessage email1 = new Messaging.SingleEmailMessage();
-// email.setToAddresses(address); // Replace 'hr@example.com' with the actual HR email address
-// email.setSubject('New File Uploaded');
-// email.setPlainTextBody('Dear HR,' + '\n' + 'From (' + email + ') all the documents are uploaded. Please check.');
-// email.setOrgWideEmailAddressId(orgEmail[0].Id);
-// emailList.add(email1);
-// System.debug('email ' + emailList);
-// // email.setCcAddresses(new List<String>{ loginemail }); // Include the user's email address in CC
-
-// Messaging.sendEmail(emailList);
-// }
 @AuraEnabled(cacheable=true)
 public static List<CEMS_Job_Application__c> getJobApplications(){
     return [SELECT CEMS_First_Name__c, CEMS_Last_Name__c, CEMS_Email__c, CEMS_Email_Notification__c, CEMS_Job_Opening__c, CEMS_Pre_Screening_Exam_Link__c, CEMS_Screening_Exam_Score__c, CEMS_Skills__c, CEMS_Work_Experience__c, CEMS_Company_Name__c, CEMS_Role__c, CEMS_Worked_On__c, CEMS_Results__c, CEMS_Pre_Screening__c, CEMS_Referral__c, CEMS_Personnel__c, Notice_Period__c, Back_Ground_Verification__c, Offered_Position__c, Date_of_Joining__c, Budget_Allotted__c, CEMS_Interview_Result__c, Offered_salary__c, CEMS_Stage__c, CEMS_Status__c, Offered_Level__c, CEMS_Joining_Status__c, CEMS_Current_Position__c, CEMS_Type__c, CEMS_Expected_Salary__c, CEMS_Negotiated_Salary__c, CEMS_Hike_Percentage__c, CEMS_Basic_Pay__c, CEMS_Gratuity__c, CEMS_HRA__c, CEMS_Provident_Fund__c, CEMS_Company_Benefits_Plan__c, CEMS_Variable_Pay__c, CEMS_Health_Benefits__c, CEMS_Bonus__c, CEMS_Approval_Status__c, Id, Name, RecordTypeId FROM CEMS_Job_Application__c];
@@ -344,27 +353,27 @@ public static List<CEMS_Personnel__c> getEmployees(String email) {
  public static List<CEMS_Training__c> getAllCEMSTrainings() {
         List<CEMS_Training__c> cemsTrainings = [SELECT Id, Name, Category__c, Certificate_Level__c, CEMS_Certificate_Name__c, CreatedById,CEMS_Description__c, CEMS_Designated_Days__c, LastModifiedById, CEMS_Learning_Name__c,CEMS_Mandatory__c, OwnerId, RecordTypeId, CEMS_Registration_URL__c, CEMS_Resource_URl__c, Registered__c FROM CEMS_Training__c];
         
-        for (CEMS_Training__c cemsTraining : cemsTrainings) {
-            System.debug('----------------');
-            System.debug('ID: ' + cemsTraining.Id);
-            System.debug('Name: ' + cemsTraining.Name);
-            System.debug('Category: ' + cemsTraining.Category__c);
-            System.debug('Certificate Level: ' + cemsTraining.Certificate_Level__c);
-            System.debug('Certificate Name: ' + cemsTraining.CEMS_Certificate_Name__c);
-            System.debug('Created By ID: ' + cemsTraining.CreatedById);
-            System.debug('Description: ' + cemsTraining.CEMS_Description__c);
-            System.debug('Designated Days: ' + cemsTraining.CEMS_Designated_Days__c);
-            System.debug('Last Modified By ID: ' + cemsTraining.LastModifiedById);
-            System.debug('Learning Name: ' + cemsTraining.CEMS_Learning_Name__c);
-            System.debug('Mandatory: ' + cemsTraining.CEMS_Mandatory__c);
-            System.debug('Owner ID: ' + cemsTraining.OwnerId);
-            System.debug('Record Type ID: ' + cemsTraining.RecordTypeId);
-            System.debug('Registration URL: ' + cemsTraining.CEMS_Registration_URL__c);
-            System.debug('Resource URL: ' + cemsTraining.CEMS_Resource_URl__c);
-            System.debug('Is Registered: ' + cemsTraining.Registered__c);
+        // for (CEMS_Training__c cemsTraining : cemsTrainings) {
+        //     System.debug('----------------');
+        //     System.debug('ID: ' + cemsTraining.Id);
+        //     System.debug('Name: ' + cemsTraining.Name);
+        //     System.debug('Category: ' + cemsTraining.Category__c);
+        //     System.debug('Certificate Level: ' + cemsTraining.Certificate_Level__c);
+        //     System.debug('Certificate Name: ' + cemsTraining.CEMS_Certificate_Name__c);
+        //     System.debug('Created By ID: ' + cemsTraining.CreatedById);
+        //     System.debug('Description: ' + cemsTraining.CEMS_Description__c);
+        //     System.debug('Designated Days: ' + cemsTraining.CEMS_Designated_Days__c);
+        //     System.debug('Last Modified By ID: ' + cemsTraining.LastModifiedById);
+        //     System.debug('Learning Name: ' + cemsTraining.CEMS_Learning_Name__c);
+        //     System.debug('Mandatory: ' + cemsTraining.CEMS_Mandatory__c);
+        //     System.debug('Owner ID: ' + cemsTraining.OwnerId);
+        //     System.debug('Record Type ID: ' + cemsTraining.RecordTypeId);
+        //     System.debug('Registration URL: ' + cemsTraining.CEMS_Registration_URL__c);
+        //     System.debug('Resource URL: ' + cemsTraining.CEMS_Resource_URl__c);
+        //     System.debug('Is Registered: ' + cemsTraining.Registered__c);
             
             
-        }
+        // }
         
         return cemsTrainings;
     }
@@ -439,4 +448,41 @@ public static List<CEMS_Personnel__c> getEmployees(String email) {
             throw new AuraHandledException(errorMessage);
         }
     }
+
+    @AuraEnabled
+    public static List<CEMS_Job_Opening__c> getJobOpen(String userEmail) {
+    List<CEMS_Job_Opening__c> jobOpenings = new List<CEMS_Job_Opening__c>();
+
+    // Step 1: Query the personnel record based on the user's email
+    List<CEMS_Personnel__c> personnelList = [SELECT Id, CEMS_Personal_Email__c, CEMS_Work_Email__c FROM CEMS_Personnel__c WHERE CEMS_Personal_Email__c = :userEmail OR CEMS_Work_Email__c = :userEmail LIMIT 1];
+system.debug('personnelList'+personnelList);
+    if (!personnelList.isEmpty()) {
+        CEMS_Personnel__c personnel = personnelList[0];
+
+        // Step 2: Check if the personnel record has both personal and work email fields
+        if (personnel.CEMS_Personal_Email__c != null && personnel.CEMS_Work_Email__c != null) {
+            // Step 3: If both personal and work email fields are present, fetch internal job openings
+            jobOpenings = [SELECT Id, Name, RecordTypeId, CEMS_Experience__c, CEMS_Job_Location__c, 
+                                  CEMS_Roles_and_Responsibilities__c, CEMS_Minimum_Pay__c, 
+                                  CEMS_Maximum_Pay__c, CEMS_Available_Vacancies__c, CEMS_Due_Date__c, 
+                                  CEMS_Skills__c, CEMS_Technology__c, CEMS_Approval_Status__c 
+                           FROM CEMS_Job_Opening__c 
+                           WHERE CEMS_Approval_Status__c='Approved' 
+                           AND RecordTypeId='012H4000000VCPRIA4'];
+            system.debug('jobOpenings11'+jobOpenings);
+        } else {
+            // Step 4: If either personal or work email field is missing, fetch external job openings
+            jobOpenings = [SELECT Id, Name, RecordTypeId, CEMS_Experience__c, CEMS_Job_Location__c, 
+                                  CEMS_Roles_and_Responsibilities__c, CEMS_Minimum_Pay__c, 
+                                  CEMS_Maximum_Pay__c, CEMS_Available_Vacancies__c, CEMS_Due_Date__c, 
+                                  CEMS_Skills__c, CEMS_Technology__c, CEMS_Approval_Status__c 
+                           FROM CEMS_Job_Opening__c 
+                           WHERE CEMS_Approval_Status__c='Approved' AND RecordTypeId='012H4000000VCPQIA4' ];
+            system.debug('jobOpenings2'+jobOpenings);
+        }
+    }
+    
+    return jobOpenings;
+}
+
 }

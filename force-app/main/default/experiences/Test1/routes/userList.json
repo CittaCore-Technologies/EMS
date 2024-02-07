@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "f033063a-4da3-46c5-bca9-fcf95dd47d0d",
+  "appPageId" : "795b5213-4166-4c1f-be10-e35ab4ec6754",
+  "configurationTags" : [ ],
+  "devName" : "User_List",
+  "id" : "f8d9a549-ce45-47dd-9f10-0ea3e645abd4",
+  "label" : "User List",
+  "routeType" : "list-005",
+  "type" : "route",
+  "urlPrefix" : "profile"
+}

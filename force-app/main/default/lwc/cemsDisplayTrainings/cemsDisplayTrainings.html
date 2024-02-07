@@ -71,64 +71,128 @@
     </div>
   </template>-->
 
-  <template>
+  <!--<template>
     <lightning-card>
-    <c-custom-toast-messages></c-custom-toast-messages>
-    <div class="slds-tabs_default">
-      <ul class="slds-tabs_default__nav" role="tablist">
-        <li class="slds-tabs_default__item" title="Certificates" role="presentation">
-          <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected={isCertificatesTabSelected} aria-controls="tab-certificates" onclick={handleTabClick} data-tab="certificates" id="tab-certificates__item">Certificates</a>
-        </li>
-        <li class="slds-tabs_default__item" title="Learnings" role="presentation">
-          <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected={isLearningsTabSelected} aria-controls="tab-learnings" onclick={handleTabClick} data-tab="learnings" id="tab-learnings__item">Learnings</a>
-        </li>
-      </ul>
-      <div id="tab-certificates" class={certificatesTabClass} role="tabpanel" aria-labelledby="tab-certificates__item">
-        <div class="slds-grid slds-wrap">
-          <template for:each={displayedTrainingList} for:item="certificate">
-            <div class="slds-col slds-size_1-of-4" key={certificate.Id}>
-              <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
-                <a href="#" onclick={toggleCertificateDetails} data-id={certificate.Id}>{certificate.CEMS_Certificate_Name__c}</a>
-                <div class="slds-card_boundary slds-p-around_small card certificate-details" data-id={certificate.Id} hidden>
-                  <p>Description: {certificate.CEMS_Description__c}</p>
-                  <p>Level: {certificate.Certificate_Level__c}</p>
-                  <p>Category: {certificate.Category__c}</p>
-                  <p>Designated Days: {certificate.CEMS_Designated_Days__c}</p>
-                  <p>Resource: {certificate.CEMS_Resource_URl__c}</p>
-                  <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={certificate.Id}>Register</a>
+        <c-custom-toast-messages></c-custom-toast-messages>
+        
+        <div class="slds-tabs_default">
+            <ul class="slds-tabs_default__nav" role="tablist">
+                <li class="slds-tabs_default__item" title="Certificates" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected={isCertificatesTabSelected} aria-controls="tab-certificates" onclick={handleTabClick} data-tab="certificates" id="tab-certificates__item">Certificates</a>
+                </li>
+                <li class="slds-tabs_default__item" title="Learnings" role="presentation">
+                    <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected={isLearningsTabSelected} aria-controls="tab-learnings" onclick={handleTabClick} data-tab="learnings" id="tab-learnings__item">Learnings</a>
+                </li>
+            </ul>
+            <div id="tab-certificates" class={certificatesTabClass} role="tabpanel" aria-labelledby="tab-certificates__item">
+                <div class="slds-grid slds-wrap">
+                    <template for:each={displayedCertificates} for:item="certificate">
+                        <div class="slds-col slds-size_1-of-4" key={certificate.Id}>
+                            <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
+                                <a href="#" onclick={toggleCertificateDetails} data-id={certificate.Id}>{certificate.CEMS_Certificate_Name__c}</a>
+                                <div class="slds-card_boundary slds-p-around_small card certificate-details" data-id={certificate.Id} hidden>
+                                    <p>Description: {certificate.CEMS_Description__c}</p>
+                                    <p>Level: {certificate.Certificate_Level__c}</p>
+                                    <p>Category: {certificate.Category__c}</p>
+                                    <p>Designated Days: {certificate.CEMS_Designated_Days__c}</p>
+                                    <p>Resource: {certificate.CEMS_Resource_URl__c}</p>
+                                    <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={certificate.Id}>Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={isCertificatesEmpty}>
+                        <p>No certificates available</p>
+                    </template>
                 </div>
+            </div>
+            <div id="tab-learnings" class={learningsTabClass} role="tabpanel" aria-labelledby="tab-learnings__item">
+                <div class="slds-grid slds-wrap">
+                    <template for:each={displayedLearnings} for:item="learning">
+                        <div class="slds-col slds-size_1-of-4" key={learning.Id}>
+                            <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
+                                <a href="#" onclick={toggleLearningDetails} data-id={learning.Id}>{learning.CEMS_Learning_Name__c}</a>
+                                <div class="slds-card_boundary slds-p-around_small card learning-details" data-id={learning.Id} hidden>
+                                    <p>Description: {learning.CEMS_Description__c}</p>
+                                    <p>Category: {learning.Category__c}</p>
+                                    <p>Designated Days: {learning.CEMS_Designated_Days__c}</p>
+                                    <p>Link: {learning.CEMS_Registration_URL__c}</p>
+                                    <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={learning.Id}>Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={isLearningsEmpty}>
+                        <p>No learnings available</p>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <div if:true={isPaginationVisible} class="slds-grid slds-grid_vertical-align-spread">
+            <lightning-button label="Previous" icon-name="utility:chevronleft" title="Previous" onclick={handlePrevious} disabled={isPreviousDisabled}></lightning-button>
+            <lightning-button label="Next" icon-name="utility:chevronright" title="Next" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+        </div>
+    </lightning-card>
+</template>-->
+<template>
+  <lightning-card>
+  <c-custom-toast-messages></c-custom-toast-messages>
+  <div class="slds-tabs_default">
+    <ul class="slds-tabs_default__nav" role="tablist">
+      <li class="slds-tabs_default__item" title="Certificates" role="presentation">
+        <a class="slds-tabs_default__link" href="#" role="tab" tabindex="0" aria-selected={isCertificatesTabSelected} aria-controls="tab-certificates" onclick={handleTabClick} data-tab="certificates" id="tab-certificates__item">Certificates</a>
+      </li>
+      <li class="slds-tabs_default__item" title="Learnings" role="presentation">
+        <a class="slds-tabs_default__link" href="#" role="tab" tabindex="-1" aria-selected={isLearningsTabSelected} aria-controls="tab-learnings" onclick={handleTabClick} data-tab="learnings" id="tab-learnings__item">Learnings</a>
+      </li>
+    </ul>
+    <div id="tab-certificates" class={certificatesTabClass} role="tabpanel" aria-labelledby="tab-certificates__item">
+      <div class="slds-grid slds-wrap">
+        <template for:each={displayedTrainingList} for:item="certificate">
+          <div class="slds-col slds-size_1-of-4" key={certificate.Id}>
+            <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
+              <a href="#" onclick={toggleCertificateDetails} data-id={certificate.Id}>{certificate.CEMS_Certificate_Name__c}</a>
+              <div class="slds-card_boundary slds-p-around_small card certificate-details" data-id={certificate.Id} hidden>
+                <p>Description: {certificate.CEMS_Description__c}</p>
+                <p>Level: {certificate.Certificate_Level__c}</p>
+                <p>Category: {certificate.Category__c}</p>
+                <p>Designated Days: {certificate.CEMS_Designated_Days__c}</p>
+                <p>Resource: {certificate.CEMS_Resource_URl__c}</p>
+                <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={certificate.Id}>Register</a>
               </div>
             </div>
-          </template>
-        </div>
-      </div>
-      <div id="tab-learnings" class={learningsTabClass} role="tabpanel" aria-labelledby="tab-learnings__item">
-        <div class="slds-grid slds-wrap">
-          <template for:each={displayedTrainingList} for:item="learning">
-            <div class="slds-col slds-size_1-of-4" key={learning.Id}>
-              <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
-                <a href="#" onclick={toggleLearningDetails} data-id={learning.Id}>{learning.CEMS_Learning_Name__c}</a>
-                <div class="slds-card_boundary slds-p-around_small card learning-details" data-id={learning.Id} hidden>
-                  <p>Description: {learning.CEMS_Description__c}</p>
-                  <p>Category: {learning.Category__c}</p>
-                  <p>Designated Days: {learning.CEMS_Designated_Days__c}</p>
-                  <p>Link: {learning.CEMS_Registration_URL__c}</p>
-                  <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={learning.Id}>Register</a>
-                </div>
-              </div>
-            </div>
-          </template>
-        </div>
+          </div>
+        </template>
       </div>
     </div>
-   
-    <div if:true={isPaginationVisible} class="slds-grid slds-grid_vertical-align-spread">
-   
-   <lightning-button label="Previous" icon-name="utility:chevronleft" title="Previous" onclick={handlePrevious} disabled={isPreviousDisabled}></lightning-button>
-
-   
-   <lightning-button label="Next" icon-name="utility:chevronright" title="Next" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+    <div id="tab-learnings" class={learningsTabClass} role="tabpanel" aria-labelledby="tab-learnings__item">
+      <div class="slds-grid slds-wrap">
+        <template for:each={displayedTrainingList} for:item="learning">
+          <div class="slds-col slds-size_1-of-4" key={learning.Id}>
+            <div class="slds-card_boundary slds-p-around_small card" style="margin:5px;">
+              <a href="#" onclick={toggleLearningDetails} data-id={learning.Id}>{learning.CEMS_Learning_Name__c}</a>
+              <div class="slds-card_boundary slds-p-around_small card learning-details" data-id={learning.Id} hidden>
+                <p>Description: {learning.CEMS_Description__c}</p>
+                <p>Category: {learning.Category__c}</p>
+                <p>Designated Days: {learning.CEMS_Designated_Days__c}</p>
+                <p>Link: {learning.CEMS_Registration_URL__c}</p>
+                <a class="slds-button" href="#" onclick={handleRegisterClick} data-id={learning.Id}>Register</a>
+              </div>
+            </div>
+          </div>
+        </template>
       </div>
-    
-    </lightning-card>
-  </template>
+    </div>
+  </div>
+ 
+  <div if:true={isPaginationVisible} class="slds-grid slds-grid_vertical-align-spread">
+ 
+ <lightning-button label="Previous" icon-name="utility:chevronleft" title="Previous" onclick={handlePrevious} disabled={isPreviousDisabled}></lightning-button>
+
+ 
+ <lightning-button label="Next" icon-name="utility:chevronright" title="Next" onclick={handleNext} disabled={isNextDisabled}></lightning-button>
+    </div>
+  
+  </lightning-card>
+</template>

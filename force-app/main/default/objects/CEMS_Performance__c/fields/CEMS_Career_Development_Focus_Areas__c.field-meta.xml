@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_Career_Development_Focus_Areas__c</fullName>
+    <externalId>false</externalId>
+    <label>Career Development Focus Areas</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accepting constructive feedback</fullName>
+                <default>false</default>
+                <label>Accepting constructive feedback</label>
+            </value>
+            <value>
+                <fullName>Collaboration</fullName>
+                <default>false</default>
+                <label>Collaboration</label>
+            </value>
+            <value>
+                <fullName>Conflict resolution</fullName>
+                <default>false</default>
+                <label>Conflict resolution</label>
+            </value>
+            <value>
+                <fullName>Creativity and Innovation</fullName>
+                <default>false</default>
+                <label>Creativity and Innovation</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Goal-setting</fullName>
+                <default>false</default>
+                <label>Goal-setting</label>
+            </value>
+            <value>
+                <fullName>Industry-Specific Knowledge</fullName>
+                <default>false</default>
+                <label>Industry-Specific Knowledge</label>
+            </value>
+            <value>
+                <fullName>Leadership and Management</fullName>
+                <default>false</default>
+                <label>Leadership and Management</label>
+            </value>
+            <value>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+                <label>Project Management</label>
+            </value>
+            <value>
+                <fullName>Sales and Marketing</fullName>
+                <default>false</default>
+                <label>Sales and Marketing</label>
+            </value>
+            <value>
+                <fullName>Strategic Planning</fullName>
+                <default>false</default>
+                <label>Strategic Planning</label>
+            </value>
+            <value>
+                <fullName>Technical Skills</fullName>
+                <default>false</default>
+                <label>Technical Skills</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

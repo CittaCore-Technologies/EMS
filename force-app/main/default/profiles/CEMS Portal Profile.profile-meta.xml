@@ -1,0 +1,2697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>CEMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Health_Cloud_Emergency_Response</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Lead_Generation</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Relationship_Management</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Leadership</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Sales_Operations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Utilization_Management</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AdvancedTherapyManagement</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AllTabSet</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__AppLauncher</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Chatter</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Community</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Content</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__DataManager</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ExpressionSetConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__HVSConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ICMConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Insights</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningBolt</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningScheduler</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__LightningService</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Marketing</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__OnlineSales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Platform</application>
+        <default>true</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__PreconfiguredLightningServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Sales</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__Service</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
+        <application>standard__ServiceConsole</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <custom>true</custom>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Award__c.CEMS_ward_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Award__c.Personnel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Employee_Award__c.CEMS_Award_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Employee_Award__c.CEMS_Award_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Employee_Project__c.CEMS_Employee_s_Project_Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Employee_Project__c.CEMS_Project_Responsiblity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Applicant_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Feedback_Comments__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_End_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Location__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Panel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Round__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Start_Time__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Interview_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_IsFeedbackSubmitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Job_Application_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Meeting_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_SKill_6_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_1_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_1_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_2_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_2_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_3_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_3_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_4_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_4_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_5_Comment__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_5_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_5__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_6_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Internal_Scheduler__c.CEMS_Skill_6__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Interview_Panel__c.CEMS_Interviewer_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Interview_Panel__c.CEMS_Interviewer_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Interview_Panel__c.CEMS_Interviewer_3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Interview_Panel__c.CEMS_Personnel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Interview_Panel__c.CEMS_Position_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Back_Ground_Verification__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Budget_Allotted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Approval_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Basic_Pay__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Bonus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Company_Benefits_Plan__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Company_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Current_Position__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Email_Notification__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Expected_Salary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_First_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Gratuity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_HRA__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Health_Benefits__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Hike_Percentage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Interview_Result__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Joining_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Last_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Negotiated_Salary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Pre_Screening_Exam_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Pre_Screening__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Provident_Fund__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Referral__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Required_Documents_to_Upload__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Results__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Role__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Screening_Exam_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Skills__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Application__c.CEMS_Variable_Pay__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Work_Experience__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.CEMS_Worked_On__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Date_of_Joining__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Notice_Period__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Offered_Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Offered_Position__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Application__c.Offered_salary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Approval_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Available_Vacancies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Due_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Experience__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Filled_Vacancies__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Job_Location__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Job_Opening_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Maximum_Pay__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Minimum_Pay__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Recruiting_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Roles_and_Responsibilities__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Skills__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.CEMS_Technology__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Job_Opening__c.Grade__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.CEMS_Leave_Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.CEMS_Leave_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.CEMS_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.CEMS_Total_Leaves__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.CEMS_Type_Of_Leave__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.Emp_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.Granted_Advanced_Leave__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.Granted_Bereavement_Leave__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.Granted_Paid_Leaves__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Leave__c.Manager_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Performance_Improvement_Plan__c.CEMS_Action__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Performance_Improvement_Plan__c.CEMS_End_Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Performance_Improvement_Plan__c.CEMS_Resource__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Bonus__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Career_Development_Focus_Areas__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Current_Discussion_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Feedback__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Hike__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Last_Discussion_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Opportunities__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Overall_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Performance__c.CEMS_Performance_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Performance_Outcome__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Promoted_Designation__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Rating_Value_1__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Rating_Value_2__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Rating_Value_3__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Rating_Value_4__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Strength__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Threats__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Performance__c.CEMS_Weakness__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMSAddress__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Personnel__c.CEMS_Applicant_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Bench__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Board_Of_Qualification__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_CGPA_Percentage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Company_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Contact_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Current_Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Current_Salary__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Date_of_Birth__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Education__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Employee_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Experience__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_HR_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Highest_Degree__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Joined_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Mobile__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_PAN_Card_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Personal_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Please_Upload_Resume__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Position__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Project_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Recruiting_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Reporting_Director__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Reporting_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Required_Documents_to_Upload__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Resource_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Roles__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Work_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Work_Location__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Personnel__c.CEMS_Years_Of_Experience__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Exam_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Exam_Duration__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Exam_Questions_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Job_Application_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Passing_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Pre_Screening__c.CEMS_Position_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Pre_Screening__c.Email_Notification__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_Client_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Projects__c.CEMS_Duration_Of_Project__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_End_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_No_Of_Resources_Required__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_POC_Contact_Email__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_Point_Of_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_Project_Details__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Projects__c.CEMS_Project_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Projects__c.CEMS_Start_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Referral__c.CEMS_Referee_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Referral__c.CEMS_Referred_By__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Referral__c.CEMS_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Confirm_Password__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_EMail__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Education__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Experience__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_First_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Last_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_PAN_Card_Number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Password__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Phone_No__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Registrations_Data__c.CEMS_Username__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Contact_Number__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Current_Level__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Current_Position__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Employee_Name__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Feedback_on_Company__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Last_Working_Day__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Mode_of_Relieving__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Personal_Email__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Reason_for_Resignation__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Resigned_on__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Stage__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Status__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>CEMS_Resignation__c.CEMS_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Certificate_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Designated_Days__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Learning_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Mandatory__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Registration_URL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.CEMS_Resource_URl__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.Category__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.Certificate_Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_Training__c.Registered__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.Applicant_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.Email_Address__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.Employee_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.Is_Used__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.OTP__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>CEMS_User_Login__c.Personnel__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Assessment_Link__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Assessment_Score__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Assessment_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Certification_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Due_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Employee_Training__c.CEMS_Employee_Certificate_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Learning_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Mandatory__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Specific__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Employee_Training__c.CEMS_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Employee_Training__c.Employee_Learning_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>GoogleAuthSetting__mdt.AccessToken__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Knowledge__kav.Answer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Knowledge__kav.Question__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Quarters__c.CEMS_Performance_Rating__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Service_Mapping__mdt.Service_Type__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Slide__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Slide__c.Heading__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Slide__c.altText__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Slide__c.image__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountBrand-Account Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AccountContactRelation-Account Contact Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Accreditation-Accreditation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlan-Action Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanItemDependency-Action Plan Item Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplate-Action Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateAssignment-Action Plan Template Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItem-Action Plan Template Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateItemValue-Action Plan Template Item Value Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlanTemplateVersion-Action Plan Template Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActionPlnTmplItmDependency-Action Plan Template Item Dependency Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ActivityTiming-Activity Timing Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Address-Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AllergyIntolerance-Allergy Intolerance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AppointmentInvitation-Appointment Invitation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentIndicatorDefinition-Assessment Indicator Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTask-Assessment Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTaskContentDocument-Assessment Task Content Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssessmentTaskDefinition-Assessment Task Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Asset-Asset Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssetRelationship-Asset Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssignedResource-Assigned Resource Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AssociatedLocation-Associated Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorNote-Author Note Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationForm-Authorization Form Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormConsent-Authorization Form Consent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormDataUse-Authorization Form Data Use Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Award-Award Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BoardCertification-Board Certification Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessBrand-Business Brand Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessLicense-Business License Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>BusinessMilestone-Business Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Award__c-Award Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Employee_Award__c-Employee Award Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Employee_Project__c-Employee Project Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Internal_Scheduler__c-Client Interview Layout</layout>
+        <recordType>CEMS_Internal_Scheduler__c.CEMS_Client_Interview</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Internal_Scheduler__c-Company Interview Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Internal_Scheduler__c-Company Interview Layout</layout>
+        <recordType>CEMS_Internal_Scheduler__c.CEMS_Company_Interview</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Interview_Panel__c-Interview Panel Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Application__c-External Job Layout</layout>
+        <recordType>CEMS_Job_Application__c.CEMS_External_Job_Application</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Application__c-Internal Job Layout</layout>
+        <recordType>CEMS_Job_Application__c.CEMS_Internal_Application</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Application__c-Job Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Opening__c-External Job Opening Layout</layout>
+        <recordType>CEMS_Job_Opening__c.CEMS_External_Job_Opening</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Opening__c-Internal Job Opening Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Job_Opening__c-Internal Job Opening Layout</layout>
+        <recordType>CEMS_Job_Opening__c.CEMS_Internal_Job_Opening</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Leave__c-Leave Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Performance_Improvement_Plan__c-Performance Improvement Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Performance__c-Performance Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Personnel__c-Applicant Layout</layout>
+        <recordType>CEMS_Personnel__c.Applicant</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Personnel__c-Employee Layout</layout>
+        <recordType>CEMS_Personnel__c.Employee</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Personnel__c-Personnel Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Pre_Screening__c-Pre-Screening Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Projects__c-Projects Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Referral__c-Referral Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Registrations_Data__c-Registrations Data Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Resignation__c-Resignation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Training__c-Certificate Training</layout>
+        <recordType>CEMS_Training__c.Certificates</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Training__c-Learning Training</layout>
+        <recordType>CEMS_Training__c.Learnings</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_Training__c-Training Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_User_Login__c-Applicant Login</layout>
+        <recordType>CEMS_User_Login__c.Applicant_Login</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_User_Login__c-Employee Login</layout>
+        <recordType>CEMS_User_Login__c.Employee_Login</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CEMS_User_Login__c-User Login Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalcProcStepRelationship-Expression Set Step Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrix-Decision Matrix Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixColumn-Decision Matrix Column Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixRow-Decision Matrix Row Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationMatrixVersion-Decision Matrix Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedure-Calculation Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureStep-Calculation Procedure Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVariable-Calculation Procedure Variable Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CalculationProcedureVersion-Calculation Procedure Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Campaign-Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignInfluenceModel-Campaign Influence Model Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CampaignMember-Campaign Member Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrier-Care Barrier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrierDeterminant-Care Barrier Determinant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBarrierType-Care Barrier Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBenefitVerifyRequest-Care Benefit Verify Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareBenefitVerifySettings-Care Benefit Verification Settings Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareDeterminant-Care Determinant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareDeterminantType-Care Determinant Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareDiagnosis-Care Diagnosis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareEpisode-Care Episode Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareEpisodeDetail-Care Episode Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareInterventionType-Care Intervention Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareLimitType-Care Limit Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareMetricTarget-Care Metric Target Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareObservation-Care Observation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareObservationComponent-Care Observation Component Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePerformer-Care Performer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmEnrolleeWkOrdStep-Care Program Enrollee Work Order Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmEnrolleeWorkOrder-Care Program Enrollee Work Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePgmProvHealthcareProvider-Care Program Healthcare Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlan-Care Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanActivity-Care Plan Activity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanActivityDetail-Care Plan Activity Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanDetail-Care Plan Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanTemplate-Care Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanTemplateGoal-Care Plan Template Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePlanTemplateProblem-Care Plan Template Problem Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePreauth-Care Preauth Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CarePreauthItem-Care Preauth Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProcessingError-Care Processing Error Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgram-Care Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramCampaign-Care Program Campaign Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEligibilityRule-Care Program Eligibility Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrollee-Care Program Enrollee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrolleeProduct-Care Program Enrollee Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramEnrollmentCard-Care Program Enrollment Card Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramGoal-Care Program Goal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramProduct-Care Program Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramProvider-Care Program Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProgramTeamMember-Care Program Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderAdverseAction-Care Provider Adverse Action Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderFacilitySpecialty-Care Provider Facility Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderSearchConfig-Care Provider Search Config Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareProviderSearchableField-Care Provider Searchable Field Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRegisteredDevice-Care Registered Device Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequest-Care Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestConfiguration-Care Request Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestDrug-Care Request Drug Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestExtension-Care Request Extension Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestItem-Care Request Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareRequestReviewer-Care Request Reviewer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSpecialty-Care Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSpecialtyTaxonomy-Care Specialty Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareSystemFieldMapping-Care System Field Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CareTaxonomy-Care Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Case-Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseInteraction-Case Feed Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseMilestone-Case Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CaseParticipant-Case Participant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalAlert-Clinical Alert Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalDetectedIssue-Clinical Detected Issue Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalDetectedIssueDetail-Clinical Detected Issue Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounter-Clinical Encounter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterDiagnosis-Clinical Encounter Diagnosis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterFacility-Clinical Encounter Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterIdentifier-Clinical Encounter Identifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterProvider-Clinical Encounter Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterReason-Clinical Encounter Reason Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalEncounterSvcRequest-Clinical Encounter Svc Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalServiceRequest-Clinical Service Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ClinicalServiceRequestDetail-Clinical Service Request Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CodeSet-Code Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CodeSetBundle-Code Set Bundle Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CollaborationGroup-Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactEncounter-Contact Encounter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactEncounterParticipant-Contact Encounter Participant Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointAddress-Contact Point Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointEmail-Contact Point Email Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContentVersion-Content Version</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contract-Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ContractLineItem-Contract Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefit-Coverage Benefit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefitItem-Coverage Benefit Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CoverageBenefitItemLimit-Coverage Benefit Item Limit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>CspTrustedSite-Trusted URL Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer-Customer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataLakeObjectInstance-Data Lake Object Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataStream-Data Stream Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DataUsePurpose-Data Use Purpose Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DiagnosticSummary-Diagnostic Summary Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DiagnosticSummaryDetail-Diagnostic Summary Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DocumentChecklistItem-Document Checklist Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DocumentType-Document Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DrugDisplayTerm-Drug Display Term Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmailMessage-Email Message Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmpUserProvisionProcessErr-Employee User Provisioning Process Error Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EmpUserProvisioningProcess-Employee User Provisioning Process Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee-Employee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee_Training__c-Emp Certificate Training</layout>
+        <recordType>Employee_Training__c.CEMS_Employee_Certificate</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee_Training__c-Emp Learning Layout</layout>
+        <recordType>Employee_Training__c.CEMS_Employee_Learning</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Employee_Training__c-Employee Training Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementChannelType-Engagement Channel Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementInteraction-Engagement Interaction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EngagementTopic-Engagement Topic Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EnrollmentEligibilityCriteria-Enrollment Eligibility Criteria Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Entitlement-Entitlement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>EntityMilestone-Object Milestone Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ExpressionSet-Expression Set Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ExpressionSetVersion-Expression Set Version Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>FeedItem-Feed Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GenericVisitTask-Generic Visit Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GenericVisitTaskContext-Generic Visit Task Context Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GnrcVstKeyPerformanceInd-Generic Visit Key Performance Indicator Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GnrcVstTaskContextRelation-Generic Visit Task Context Relation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GoalAssignment-Goal Assignment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GoalAssignmentDetail-Goal Assignment Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GoalDefinition-Goal Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>GoogleAuthSetting__mdt-GoogleAuthSetting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthCareDiagnosis-Healthcare Diagnosis Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthCareProcedure-Healthcare Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthCondition-Health Condition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthConditionDetail-Health Condition Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareFacility-Healthcare Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareFacilityNetwork-Healthcare Facility Network Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcarePayerNetwork-Healthcare Payer Network Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcarePractitionerFacility-Healthcare Practitioner Facility Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProvider-Healthcare Provider Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderNpi-Healthcare Provider NPI Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderSpecialty-Healthcare Provider Specialty Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>HealthcareProviderTaxonomy-Healthcare Provider Taxonomy Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Idea-Idea Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Identifier-Identifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>IdentityDocument-Identity Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Individual-Individual Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>InternalOrganizationUnit-Internal Organization Unit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Knowledge__kav-Knowledge Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Knowledge__kav-Knowledge Layout</layout>
+        <recordType>Knowledge__kav.FAQ</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Lead-Lead Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LiveChatTranscriptActive-Chat Transcript %28In Progress%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>LiveChatTranscriptWaiting-Chat Transcript %28Waiting%29 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Location-Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Macro-Macro Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Medication-Medication Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationDispense-Medication Dispense Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationRequest-Medication Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationStatement-Medication Statement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicationStatementDetail-Medication Statement Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MedicinalIngredient-Medicinal Ingredient Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MemberPlan-Member Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>MessagingSession-Messaging Session Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OmniProcess-Omni Process Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OperatingHours-Operating Hours Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OperatingHoursHoliday-Operating Hours Holiday Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Opportunity-Opportunity Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Order-Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OrderItem-Order Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>OtherComponentTask-Other Component Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientHealthReaction-Patient Health Reaction Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientImmunization-Patient Immunization Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientImmunizationProtocol-Patient Immunization Protocol Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicalProcedure-Patient Medical Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicalProcedureDetail-Patient Medical Procedure Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PatientMedicationDosage-Patient Medication Dosage Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.ERM_Patient</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.PersonAccount</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonEducation-Person Education Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonLanguage-Person Language Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonLifeEvent-Person Life Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonName-Person Name Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PlanBenefit-Plan Benefit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PlanBenefitItem-Plan Benefit Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Pricebook2-Price Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PricebookEntry-Price Book Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Problem-Problem Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemDefinition-Problem Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProblemGoalDefinition-Problem Goal Definition Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProcessException-Process Exception Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductRequest-Product Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProductRequestLineItem-Product Request Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkill-Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillEndorsement-Endorsement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProfileSkillUser-Skill User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ProviderSearchSyncLog-Provider Search Sync Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaserPlan-Purchaser Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PurchaserPlanAssn-Purchaser Plan Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quarters__c-Quarter 1</layout>
+        <recordType>Quarters__c.CEMS_Quarter_1</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quarters__c-Quarter 2</layout>
+        <recordType>Quarters__c.CEMS_Quarter_2</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quarters__c-Quarter 3</layout>
+        <recordType>Quarters__c.Quarter_3</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quarters__c-Quarter 4</layout>
+        <recordType>Quarters__c.CEMS_Quarter_4</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quarters__c-Quarters Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuickText-Quick Text Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>QuoteLineItem-Quote Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReceivedDocument-Received Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ReceivedDocumentType-Received Document Type Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RecurrenceSchedule-Recurrence Schedule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourceAbsence-Resource Absence Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ResourcePreference-Resource Preference Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SalesforceContract-Salesforce Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Seller-Seller Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceAppointment-Service Appointment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceAppointmentGroup-Service Appointment Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceContract-Service Contract Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceResource-Service Resource Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceResourceSkill-Service Resource Skill Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritory-Service Territory Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritoryMember-Service Territory Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ServiceTerritoryRelationship-Service Territory Relationship Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Service_Mapping__mdt-Service Mapping Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Shift-Shift Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ShiftWorkTopic-%5F%5FMISSING LABEL%5F%5F PropertyFile - val ShiftWorkTopic not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SiqExchangeConnection-Exchange Connection Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>SkillRequirement-Skill Requirement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Slide__c-Slide Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Solution-Solution Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Task-Task Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Team-Team Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TeamMember-Team Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TimeSlot-Time Slot Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TrackedCommunication-Tracked Communication Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>TrackedCommunicationDetail-Tracked Communication Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UIObjectRelationConfig-UI Object Relation Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UIObjectRelationFieldConfig-UI Object Relation Field Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UnitOfMeasure-Unit of Measure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAppMenuItem-Application Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvAccount-User Provisioning Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningLog-User Provisioning Log Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Visit-Visit Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>VisitedParty-Visited Party Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Visitor-Visitor Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Waitlist-%5F%5FMISSING LABEL%5F%5F PropertyFile - val Waitlist not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkAccess-Access Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadge-Badge Received Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkBadgeDefinition-Badge Layout 192</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrder-Work Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlan-Work Plan Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlanTemplate-Work Plan Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkPlanTemplateEntry-Work Plan Template Entry Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedure-Work Procedure Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkProcedureStep-Work Procedure Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkStep-Work Step Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkStepTemplate-Work Step Template Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkThanks-Thanks Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkType-%5F%5FMISSING LABEL%5F%5F PropertyFile - val WorkType not found in section StandardLayouts</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeExtension-Work Type Extension Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeGroup-Work Type Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
+    </layoutAssignments>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Award__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Employee_Award__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Employee_Project__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Internal_Scheduler__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Interview_Panel__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Job_Application__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Job_Opening__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Leave__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Performance_Improvement_Plan__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Performance__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Personnel__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Pre_Screening__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Projects__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Referral__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Registrations_Data__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Resignation__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_Training__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>CEMS_User_Login__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Employee_Training__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Quarters__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Slide__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_Internal_Scheduler__c.CEMS_Client_Interview</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_Internal_Scheduler__c.CEMS_Company_Interview</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_Job_Application__c.CEMS_External_Job_Application</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_Job_Application__c.CEMS_Internal_Application</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_Job_Opening__c.CEMS_External_Job_Opening</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_Job_Opening__c.CEMS_Internal_Job_Opening</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_Personnel__c.Applicant</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_Personnel__c.Employee</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_Training__c.Certificates</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_Training__c.Learnings</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>CEMS_User_Login__c.Applicant_Login</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>CEMS_User_Login__c.Employee_Login</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Employee_Training__c.CEMS_Employee_Certificate</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Employee_Training__c.CEMS_Employee_Learning</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Knowledge__kav.FAQ</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Quarters__c.CEMS_Quarter_1</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quarters__c.CEMS_Quarter_2</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quarters__c.CEMS_Quarter_4</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Quarters__c.Quarter_3</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <userLicense>Guest User License</userLicense>
+</Profile>

@@ -6,7 +6,7 @@ public without sharing class FetchSkillsFromJobOpening {
         System.debug(recordId );
         List<String> skills = new List<String>();
      
-        try {
+        //try {
 
             List<CEMS_Internal_Scheduler__c> interviewRecords = [SELECT Id, Name, 
              CEMS_Interview_Panel__c,
@@ -72,9 +72,9 @@ public without sharing class FetchSkillsFromJobOpening {
                 skills = jobOpening.CEMS_Skills__c.split(';');
                 System.debug('Skills from multi-select picklist: ' + skills);
             }
-        } catch (Exception e) {
-            throw new myException('Record not found'+e.getMessage());
-        }
+        //} catch (Exception e) {
+           // throw new myException('Record not found'+e.getMessage());
+        //}
         
  
         return skills;
@@ -113,7 +113,7 @@ public static void saveRatingsAndComments(List<InterviewRecord> records, String 
     feedbackList.add(feedback);
 
      
-        try {
+        //try {
             // Database update operation...
             Database.SaveResult[] saveResults = Database.update(feedbackList, false);
             for (Database.SaveResult saveResult : saveResults) {
@@ -127,13 +127,14 @@ public static void saveRatingsAndComments(List<InterviewRecord> records, String 
                     throw new AuraHandledException('Error saving ratings and comments.');
                 }
             }
-        } catch (Exception e) {
+       /* } 
+    catch (Exception e) {
             System.debug('Error saving ratings and comments: ' + e.getMessage());
             throw new AuraHandledException('Error saving ratings and comments: ' + e.getMessage());
         } finally {
               System.debug('Cleanup and resource release operations completed.');
 
-        }
+        }*/
     }
 
     

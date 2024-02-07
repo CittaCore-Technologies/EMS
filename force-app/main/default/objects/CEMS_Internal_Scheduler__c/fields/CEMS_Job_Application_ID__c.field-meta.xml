@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_Job_Application_ID__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the Job Application ID in the format of &quot;JA-XXX&quot; or type relevant keywords associated with the job application.</inlineHelpText>
+    <label>Job Application ID</label>
+    <referenceTo>CEMS_Job_Application__c</referenceTo>
+    <relationshipLabel>Interview Scheduler</relationshipLabel>
+    <relationshipName>Interview_Scheduler</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

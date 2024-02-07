@@ -239,7 +239,7 @@ static void testUploadFile2_InvalidUser() {
         // Add more assertions for other fields as needed
     }
     
-    
+     
     ////////Fetchfiles
     @isTest
     static void testFetchFiles() {
@@ -313,8 +313,8 @@ static void testUploadFile2_InvalidUser() {
                 WHERE Id = :jobApplicationId
                 LIMIT 1
             ];
-
-            System.assertNotEquals(null, resultJobApplication, 'Job Application record should be created.');
+           
+          System.assertNotEquals(null, resultJobApplication, 'Job Application record should be created.');
             System.assertEquals(recordTypeId, resultJobApplication.RecordTypeId, 'RecordTypeId should match.');
             System.assertEquals(jobApplicationId, resultJobApplication.Id, 'Returned Id should match created Job Application Id.');
         } catch (Exception e) {

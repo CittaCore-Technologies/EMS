@@ -1,7 +1,7 @@
 import { LightningElement, wire, api, track } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import skillsFetched from '@salesforce/apex/FetchSkillsFromJobOpeningWithEmail.skillsFetched';
-import saveRatingsAndComments from '@salesforce/apex/FetchSkillsFromJobOpeningWithEmail.saveRatingsAndComments';
+import skillsFetched from '@salesforce/apex/FetchSkillsFromJobOpening.skillsFetched';
+import saveRatingsAndComments from '@salesforce/apex/FetchSkillsFromJobOpening.saveRatingsAndComments';
 
 export default class InterviewFeedback extends LightningElement {
     @api recordId; // Record ID passed as an attribute

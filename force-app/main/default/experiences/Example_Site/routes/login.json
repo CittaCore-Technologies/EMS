@@ -1,0 +1,10 @@
+{
+  "activeViewId" : "ef435ca4-00ad-4d77-a5b4-d90d683950b6",
+  "appPageId" : "d3711d2b-1a37-48a4-86f6-737ebbf00c0f",
+  "configurationTags" : [ ],
+  "id" : "bc0f4a2f-f651-46a9-b1d7-0e2d0eb79916",
+  "label" : "Login",
+  "routeType" : "login-home",
+  "type" : "route",
+  "urlPrefix" : ""
+}

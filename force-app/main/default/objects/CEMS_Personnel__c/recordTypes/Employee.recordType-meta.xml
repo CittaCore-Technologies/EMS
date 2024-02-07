@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>personnel</compactLayoutAssignment>
+    <label>Employee</label>
+    <picklistValues>
+        <picklist>CEMS_Bench__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Current_Level__c</picklist>
+        <values>
+            <fullName>Level 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Level 3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Required_Documents_to_Upload__c</picklist>
+        <values>
+            <fullName>Bachelor%27s%2FUnder Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermediate%2FHigher Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master %2F Post Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC%2FClass X</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Status__c</picklist>
+        <values>
+            <fullName>Joined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Type__c</picklist>
+        <values>
+            <fullName>Contract%2FIntern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Full Time</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Work_Location__c</picklist>
+        <values>
+            <fullName>Bengaluru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chennai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyderabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mumbai</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

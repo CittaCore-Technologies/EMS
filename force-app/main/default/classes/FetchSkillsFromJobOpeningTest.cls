@@ -83,4 +83,6 @@ public class FetchSkillsFromJobOpeningTest {
         System.assertEquals('Test Comment', updatedRecord.CEMS_Skill_1_comment__c);
         System.assertEquals('Test Feedback Comment', updatedRecord.CEMS_Feedback_Comments__c);
     }
+    
+    
 }

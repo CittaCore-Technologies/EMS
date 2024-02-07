@@ -3,7 +3,7 @@ import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { createRecord } from 'lightning/uiRecordApi';
 
 export default class ForLeaveObject extends LightningElement {
-    @api recordId;
+    @api email;
     @track timeout = 3000;
     @track sticky = false;
     wiredRecord;
@@ -15,6 +15,7 @@ export default class ForLeaveObject extends LightningElement {
     handleSave(event) {
       event.preventDefault();
       const fields = event.detail.fields;
+      console.log('fields'+fields);
       this.template.querySelector('lightning-record-edit-form').submit(fields);
       this.template.querySelector("c-custom-toast-messages").showToast("success", "Leave Applied Successfully");
       this.showModal = false;

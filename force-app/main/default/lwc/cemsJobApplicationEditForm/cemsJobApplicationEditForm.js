@@ -14,12 +14,13 @@ export default class CEMSJobApplicationEditForm extends LightningElement {
     handleSubmit(event) {
         event.preventDefault();
         const fields = event.detail.fields;
+        console.log('fields:::'+fields);
 
         // Submit the form data to the Apex controller
         ApexController.createJobApplication(fields)
             .then(result => {
                 // Handle the successful creation of the record
-                console.log('Record created: ', result);
+                console.log('Record created: ', JSON.stringify(result));
                 // You can show a success message or navigate to a different page if needed.
             })
             .catch(error => {

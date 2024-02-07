@@ -23,14 +23,14 @@ public without sharing class CEMS_LoginHandler
         user.recordTypeId = applicantRecordType.Id;
         insert user;
 
-        // List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
-        // Messaging.SingleEmailMessage emailsForCase=new Messaging.SingleEmailMessage();
-        // emailsForCase.setToAddresses(new List<String> {user.Email_Address__c});
-        // emailsForCase.setSubject('Case Number Closed '+user.OTP__c);
-        // emailsForCase.setPlainTextBody('OTP');
-        // emailsForCase.setSaveAsActivity(false);
-        // emails.add(emailsForCase);
-        // Messaging.sendEmail(emails);
+        List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
+         Messaging.SingleEmailMessage emailsForCase=new Messaging.SingleEmailMessage();
+         emailsForCase.setToAddresses(new List<String> {user.Email_Address__c});
+        emailsForCase.setSubject('Case Number Closed '+user.OTP__c);
+         emailsForCase.setPlainTextBody('OTP');
+         emailsForCase.setSaveAsActivity(false);
+         emails.add(emailsForCase);
+         Messaging.sendEmail(emails);
 
 
     }
@@ -47,17 +47,17 @@ public without sharing class CEMS_LoginHandler
         update user;
     }
 
-    //  @AuraEnabled
-    // public static void employeeValidateOtpHandler(String employeeId, String emailId, String otp)
-    // {
-    //     List<CEMS_User_Login__c> user = [select id,Email_Address__c,Employee_Id__c from CEMS_User_Login__c where Employee_Id__c=:employeeId AND Email_Address__c=:emailId AND OTP__c=:otp AND Is_Used__c=False ORDER BY LastModifiedDate DESC limit 1];
-    //     if(user.size() <= 0)
-    //     {
-    //         throw new CustomException('OTP Mismatch');
-    //     }
-    //     user[0].Is_Used__c = True;
-    //     update user;
-    // }
+      @AuraEnabled
+     public static void employeeValidateOtpHandler(String employeeId, String emailId, String otp)
+     {
+        List<CEMS_User_Login__c> user = [select id,Email_Address__c,Employee_Id__c from CEMS_User_Login__c where Employee_Id__c=:employeeId AND Email_Address__c=:emailId AND OTP__c=:otp AND Is_Used__c=False ORDER BY LastModifiedDate DESC limit 1];
+        if(user.size() <= 0)
+        {
+             throw new CustomException('OTP Mismatch');
+        }
+        user[0].Is_Used__c = True;
+       update user;
+    }
 
 
 
@@ -83,8 +83,9 @@ public without sharing class CEMS_LoginHandler
         insert user;
 
         System.debug(user);
-/*
-        List<OrgWideEmailAddress> orgEmail = [Select Id from OrgWideEmailAddress where Address = 'arpita@cittacore.com'];
+
+        List<OrgWideEmailAddress> orgEmail = [Select Id from OrgWideEmailAddress where Address = 'nalinirajus@cittacore.com'];
+        system.debug('orgEmail'+orgEmail);
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
         Messaging.SingleEmailMessage emailsForCase=new Messaging.SingleEmailMessage();
         emailsForCase.setToAddresses(new List<String> {user.Email_Address__c});
@@ -94,13 +95,13 @@ public without sharing class CEMS_LoginHandler
         emailsForCase.setOrgWideEmailAddressId(orgEmail[0].Id);
         emails.add(emailsForCase);
         Messaging.sendEmail(emails);
-        System.debug(emailsForCase);*/
+        System.debug(emailsForCase);
 
     }
 
     
     @AuraEnabled
-    public static void employeeValidateOtpHandler(String employeeId, String emailId, String otp)
+    public static void employeeValidateOtpHandler2(String employeeId, String emailId, String otp)
     {
         List<CEMS_User_Login__c> user = [select id,Email_Address__c,Employee_Id__c from CEMS_User_Login__c where Employee_Id__c=:employeeId AND Email_Address__c=:emailId AND OTP__c=:otp AND Is_Used__c=False ORDER BY LastModifiedDate DESC limit 1];
         if(user.size() <= 0)
@@ -109,5 +110,13 @@ public without sharing class CEMS_LoginHandler
         }
         user[0].Is_Used__c = True;
         update user;
+    }
+       @AuraEnabled
+    public static void generateOtpHandler(String employeeId, String emailId)
+    {
+    }
+     @AuraEnabled
+    public static void validateOtpHandler(String employeeId, String emailId)
+    {
     }
 }

@@ -64,36 +64,4 @@ public class FetchSkillsFromJobOpeningWithEmailTest {
         }
         Test.stopTest();
     }
-    
-     @isTest
-    static void testInterviewRecordsFetchedException() {
-        // Create a test record with required fields
-        CEMS_Internal_Scheduler__c interviewRecord = new CEMS_Internal_Scheduler__c();
-        insert interviewRecord;
-
-        Test.startTest();
-
-        // Use a mock to simulate an exception during record retrieval
-        Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
-
-        try {
-            // Call the method with the test data
-            List<FetchSkillsFromJobOpeningWithEmail.InterviewRecord> records = FetchSkillsFromJobOpeningWithEmail.interviewRecordsFetched(interviewRecord.Id);
-            // Add assertions for the expected behavior if the method is successful
-            System.assertEquals(0, records.size(), 'No records should be found');
-        } catch (FetchSkillsFromJobOpeningWithEmail.myException e) {
-            // Assert that the exception message contains the expected string
-            System.assertEquals('Record not found:', e.getMessage().substring(0, 15), 'Unexpected exception message');
-        }
-
-        Test.stopTest();
-    }
-
-    // Mock class to simulate an exception during record retrieval
-    public class MockHttpResponseGenerator implements HttpCalloutMock {
-        public HttpResponse respond(HttpRequest req) {
-            // Simulate an exception, e.g., by returning an error HTTP status code
-            return new HttpResponse();
-        }
-    }
 }

@@ -1,0 +1,307 @@
+/**Desktop header logo and menu bar alignment**/
+
+@media only screen and (min-width: 800px) {
+    /*Image Text Hat on the Home Page*/
+    .imageText {
+        background-color: rgb(12, 102, 212);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 264.418px;
+    }
+    .imageText:hover {
+        background-color: rgb(0, 66, 146);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 264.418px;
+    }
+    .forceCommunityThemeHeroBase {
+        z-index: 4;
+        position: relative;
+    }
+    .forceCommunityReportPage.reportPageFrameWrapper {
+        overflow: hidden;
+        margin-right: 8% !Important;
+        margin-left: 8% !Important;
+    }
+    .siteforceSldsTwoCol84Layout {
+        margin-left: 9% !Important;
+        margin-right: 9% !Important;
+    }
+    .reportsLightningReportApp {
+        left: 8% !Important;
+        right: 8% !Important;
+    }
+    .reportView .reportBuilderContainer {
+        background-color: white !Important;
+    }
+    .slds-col--padded.comm-content-header.comm-layout-column {
+        margin-left: 8% !Important;
+        margin-right: 8% !Important;
+    }
+    .builder_industries_healthcareCareProgramsCommunity {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    /*Alex commented out to preserve Map Elemet Width in "Find Provider" Tab */
+    /*
+    .visualEditorPropertyEditorItem {
+        margin-left: 8% !Important;
+        margin-right: 8% !Important;
+    }*/
+    /*Alex added this to set margins for the whole Health Provider Wrapper*/
+    .healthcloudProviderSearchContainer {
+        margin-left: 8% !Important;
+        margin-right: 8% !Important;
+    }
+    .siteforceSldsTwoCol66Layout.siteforceContentArea {
+        margin-left: 8% !Important;
+    }
+    .forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeLogo {
+        margin-left: -73% !Important;
+        padding-bottom: 2% !Important;
+    }
+    .forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeUtils {
+        padding-bottom: 2% !Important;
+    }
+    .forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeNav {
+        margin-bottom: -30px !Important;
+        margin-left: 10% !Important;
+    }
+}
+
+
+/**Image Style Configuration **/
+
+.forceCommunityThemeLogo .logoImage {
+    width: 250px !Important;
+    height: 30px !Important;
+}
+
+
+/**Mobile header logo and menu bar alignment**/
+
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+    .imageText {
+        background-color: rgb(12, 102, 212);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 318.418px;
+    }
+    .imageText:hover {
+        background-color: rgb(0, 66, 146);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        max-width: 318.418px;
+    }
+    .forceCommunityThemeLogo .logoImage {
+        width: 222px !Important;
+        max-height: 32px !Important;
+        height: 22px !Important;
+    }
+}
+
+
+/**Tab header logo and menu bar alignment**/
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+    .forceCommunityThemeLogo .logoImage {
+        margin-left: 85px !Important;
+    }
+    .slds-grid .slds-wrap .tileMenuItemList {
+        margin-left: 84px !Important;
+        margin-right: 84px !Important;
+    }
+    div[role=presentation] {
+        margin-left: 84px !Important;
+        margin-right: 84px !Important;
+    }
+}
+
+
+/**header logo style **/
+
+.forceCommunityThemeLogo .logoImage {
+    background-size: 227px !Important;
+}
+
+
+/**Tile Menu Style**/
+
+.forceCommunityTileMenuItem .tileLabel {
+    text-transform: unset !Important;
+}
+
+
+/**Banner Content Header**/
+
+.forceCommunityThemeHeroBase .contentTitle {
+    font-size: 2rem !Important;
+    font-weight: bold !Important;
+}
+
+
+/**Banner Content Details **/
+
+.forceCommunityThemeHeroBase .contentSubtitle {
+    font-size: 1.3rem !Important;
+}
+
+
+/**publichealthCommunity Footer**/
+
+.publichealthCommunityFooter {
+    text-align: center !Important;
+}
+
+
+/**publichealthCommunity Footer Custom Link **/
+
+.publichealthCommunityFooter a {
+    color: #0070d2 !Important;
+    text-decoration: underline !Important;
+}
+
+
+/**publichealthCommunity **/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Float locateEmergencyServices four columns side by side */
+
+.locateEmergencyServicesColumn {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.locateEmergencyServicesRow {
+    margin: 0 -5px;
+}
+
+
+/* Clear floats after the locateEmergencyServices columns */
+
+.locateEmergencyServicesRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive locateEmergencyServices columns */
+
+@media screen and (max-width: 600px) {
+    .locateEmergencyServicesColumn {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* locateEmergencyServices counter cards */
+
+.locateEmergencyServicesCard {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    padding: 16px;
+    text-align: left;
+    /*background-color: #f1f1f1;*/
+}
+
+
+/**locateEmergencyServices Card Header Style **/
+
+.locateEmergencyServicesCardHeader {
+    margin-left: 20px;
+}
+
+
+/**locateEmergencyServices Email Address Style **/
+
+.locateEmergencyServicesRow a {
+    color: #0070d2 !Important;
+    text-decoration: underline !Important;
+}
+
+
+/**hide report Header **/
+
+.reportBuilderContainer .slds-page-header__col-title {
+    display: none !Important;
+}
+
+.hide-settings-footer .slds-page-header__col-title {
+    display: none !Important;
+}
+
+
+/*css*/
+
+.forceCommunityThemeNav.navMenuType-expanded .mainNavItem .linkBtn.comm-navigation__top-level-item-link--active {
+    border-bottom: 2px solid white !Important;
+}
+
+
+/* Home Page Allgnment */
+
+@media only screen and (max-width: 900px) and (min-width: 800px) {
+    .widthContainer {
+        width: calc(100vw - 200px) !Important;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
+    .widthContainer {
+        width: calc(100vw - 220px) !Important;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
+    .widthContainer {
+        width: calc(100vw - 240px) !Important;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px) {
+    .widthContainer {
+        width: calc(100vw - 280px) !Important;
+    }
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1400px) {
+    .widthContainer {
+        width: calc(100vw - 350px) !Important;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .widthContainer {
+        width: calc(100vw - 400px) !Important;
+    }
+}
+
+
+/*Report Iframe Fix*/
+
+@media only screen and (max-width: 1600px) and (min-width: 1200px) {
+    .forceCommunityReportPage.reportPageFrameWrapper {
+        overflow: hidden;
+        margin-right: 26% !Important;
+        margin-left: 11% !Important;
+    }
+}
+
+.forceCommunityThemeHeroStarter.dummyCommThemeGroupId .ctaBtnTwo {
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}

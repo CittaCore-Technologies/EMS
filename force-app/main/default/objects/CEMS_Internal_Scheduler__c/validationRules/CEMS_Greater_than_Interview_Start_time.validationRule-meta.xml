@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_Greater_than_Interview_Start_time</fullName>
+    <active>true</active>
+    <errorConditionFormula>CEMS_Interview_End_Time__c &lt;= CEMS_Interview_Start_Time__c</errorConditionFormula>
+    <errorDisplayField>CEMS_Interview_End_Time__c</errorDisplayField>
+    <errorMessage>Interview End Time should be greater than Interview Start time</errorMessage>
+</ValidationRule>

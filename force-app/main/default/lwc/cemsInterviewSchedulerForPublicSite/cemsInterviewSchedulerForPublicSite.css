@@ -1,3 +1,4 @@
+/*
 .datatable-container {
     border-collapse: separate !important;
     border-spacing: 0 !important;
@@ -8,18 +9,16 @@
 }
 .datatable-container td,
 .datatable-container th {
-  padding: 10px; /* Adjust the padding value as per your preference */
+  padding: 10px; 
 }
 .card {
     min-width:80vw;
-    margin: 0px 0px 0px 0px; /* Adjust the margin as needed */
+    margin: 0px 0px 0px 0px; 
     padding: 4px;
     border: 1.5px solid #d3d3d3;
     border-radius: 4px;
     background-color: #fff;
-    /* display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+   
   }
   .custom-table td,.custom-table th {
     border: 1px solid #d8dde6;
@@ -28,4 +27,4 @@
     text-align:center;
     padding:4px;
     height:45px;
-}
+}*/

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEMS_External_Job_Application</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>CEMS_Job_Application</compactLayoutAssignment>
+    <label>External Job Application</label>
+    <picklistValues>
+        <picklist>Back_Ground_Verification__c</picklist>
+        <values>
+            <fullName>Additional infromation required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Under Approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Interview_Result__c</picklist>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Joining_Status__c</picklist>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Joined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to Join</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Required_Documents_to_Upload__c</picklist>
+        <values>
+            <fullName>Bachelor%27s%2FUnder Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intermediate%2FHigher Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Master %2F Post Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SSC%2FClass X</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Results__c</picklist>
+        <values>
+            <fullName>Fail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pass</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Skills__c</picklist>
+        <values>
+            <fullName>Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apex Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Care Plan Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Integration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debugging and Testing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Knowledge Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lightning Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patient Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Rules</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Automation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Configuration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security and Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visualforce Pages</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Stage__c</picklist>
+        <values>
+            <fullName>Decisioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Release Offer Letter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CEMS_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salary Negotiation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Notice_Period__c</picklist>
+        <values>
+            <fullName>Immediate Joining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Three Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two Months</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Offered_Level__c</picklist>
+        <values>
+            <fullName>L1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>L5</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>
